@@ -2,6 +2,7 @@ const express = require("express");
 const placesRouter = require("./APIs/google-places/places");
 const geocodeRouter = require("./APIs/geocode/geocode");
 const weatherRouter = require("./APIs/weather-data/weather-data");
+require("dotenv").config();
 
 const app = express();
 
