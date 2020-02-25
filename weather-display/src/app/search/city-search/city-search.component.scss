@@ -1,0 +1,44 @@
+.weather-dashboard {
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.weather-header {
+  color: white;
+  text-shadow: 2px 5px black;
+  padding-top: 20px;
+  font-size: 64px;
+}
+.weather-subheader {
+  color: white;
+  padding-top: 20px;
+  font-size: 48px;
+}
+.weather-icon {
+  color: white;
+  font-size: 150px;
+  background-color: #00000012;
+  border-radius: 10px;
+}
+
+.search-bar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.weather-forecast {
+  color: white;
+  font-size: 16px;
+}
+
+.weather-summary {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
