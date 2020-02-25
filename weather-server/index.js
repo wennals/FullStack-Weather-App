@@ -14,5 +14,4 @@ app.use(geocodeRouter);
 app.use(weatherRouter);
 
 app.listen(port, () => {
-  console.log("Server connection established on port: " + port);
 });
