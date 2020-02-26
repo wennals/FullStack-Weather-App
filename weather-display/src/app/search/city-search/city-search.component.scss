@@ -1,44 +1,64 @@
 .weather-dashboard {
-  height: 400px;
+  height: 500px;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   background-repeat: no-repeat;
   background-size: cover;
+  margin: 20px 100px;
 }
 
 .weather-header {
+  position: relative;
+  bottom: 80px;
   color: white;
-  text-shadow: 2px 5px black;
+  font-size: 48px;
+}
+.weather-subheader {
+  position: relative;
+  bottom: 60px;
+  color: white;
   padding-top: 20px;
   font-size: 64px;
 }
-.weather-subheader {
-  color: white;
-  padding-top: 20px;
-  font-size: 48px;
-}
 .weather-icon {
+  position: relative;
+  bottom: 60px;
+  font-size: 100px;
   color: white;
-  font-size: 150px;
-  background-color: #00000012;
   border-radius: 10px;
 }
 
 .search-bar {
+  position: relative;
+  bottom: 80px;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-self: center;
+  & ::ng-deep .mat-form-field-flex {
+    border-radius: 5px;
+    background-color: white;
+  }
 }
 
 .weather-forecast {
+  position: relative;
+  bottom: 40px;
   color: white;
-  font-size: 16px;
+  font-size: 24px;
 }
 
 .weather-summary {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.summary-text {
+  font-size: 24px;
+  border-radius: 5px;
+  border: 1px solid black;
+  pointer-events: none;
 }

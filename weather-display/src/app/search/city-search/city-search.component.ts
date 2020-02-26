@@ -1,4 +1,4 @@
-import { Component, OnInit } from "@angular/core";
+import { Component, OnInit, Input } from "@angular/core";
 import { FormControl, Validators, FormGroup } from "@angular/forms";
 import { LocationConverstionService } from "src/app/services/location-conversion.service";
 import { WeatherLookupService } from "src/app/services/weather-lookup.service";
@@ -11,46 +11,52 @@ import { WeatherData } from "src/app/models/weather.interface";
   styleUrls: ["./city-search.component.scss"]
 })
 export class CitySearchComponent implements OnInit {
-  searchForm: FormGroup;
+  @Input("matAutocompletePosition") position = "below";
+
+  search: FormControl = new FormControl("");
   locationOptions: string[] = [];
   currentWeather: WeatherData;
+  location: string;
   constructor(
     private locationConverstionService: LocationConverstionService,
     private weatherService: WeatherLookupService
   ) {}
 
   ngOnInit(): void {
-    this.searchForm = new FormGroup({
-      search: new FormControl("")
-    });
-    this.searchForm.controls.search.setValue("Baltimore,MD,USA");
+    this.search.setValue("Baltimore,MD,USA");
+    this.location = this.search.value;
     this.queryWeather();
     this.onChanges();
   }
 
   onChanges() {
-    if (this.searchForm.controls.search.value != null) {
-      this.searchForm.controls.search.valueChanges.subscribe(
-        (value: string) => {
-          this.locationConverstionService
-            .getLocationList(value)
-            .subscribe((places: string[]) => {
-              this.locationOptions = places;
-            });
-        }
-      );
-    }
+    this.search.valueChanges.subscribe((value: string) => {
+      if (value !== "") {
+        this.locationConverstionService
+          .getLocationList(value)
+          .subscribe((places: string[]) => {
+            this.locationOptions = places;
+          });
+      }
+    });
   }
 
-  queryWeather() {
-    const value = this.searchForm.controls.search.value;
-    this.weatherService.getLatLong(value).subscribe((geocode: LatLong) => {
-      this.weatherService
-        .getWeather(geocode)
-        .subscribe((weatherData: WeatherData) => {
-          this.currentWeather = weatherData;
-        });
-    });
+  queryWeather(event?: KeyboardEvent) {
+    if (event) {
+      if (event.keyCode !== 13) {
+        return;
+      }
+    }
+    this.location = this.search.value;
+    this.weatherService
+      .getLatLong(this.location)
+      .subscribe((geocode: LatLong) => {
+        this.weatherService
+          .getWeather(geocode)
+          .subscribe((weatherData: WeatherData) => {
+            this.currentWeather = weatherData;
+          });
+      });
   }
 
   getIcon(icon: string): string {
@@ -79,27 +85,42 @@ export class CitySearchComponent implements OnInit {
   }
 
   getBackground(icon: string): string {
+    let image: string;
     switch (icon) {
       case "clear-day":
-        return "../../../assets/images/clear-day.jpeg";
+        image = "clear-day.jpeg";
+        break;
       case "clear-night":
-        return "../../../assets/images/clear-night.jpeg";
+        image = "clear-night.jpeg";
+        break;
       case "partly-cloudy-day":
-        return "../../../assets/images/partly-cloudy-day.jpeg";
+        image = "partly-cloudy-day.jpeg";
+        break;
       case "partly-cloudy-night":
-        return "../../../assets/images/partly-cloudy-night.jpeg";
+        image = "partly-cloudy-night.jpeg";
+        break;
       case "cloudy":
-        return "../../../assets/images/cloudy.jpg";
+        image = "cloudy.jpg";
+        break;
       case "rain":
-        return "../../../assets/images/rain.jpeg";
+        image = "rain.jpeg";
+        break;
       case "sleet":
-        return "../../../assets/images/sleet.";
+        image = "sleet.";
+        break;
       case "snow":
-        return "../../../assets/images/snow.jpeg";
+        image = "snow.jpeg";
+        break;
       case "wind":
-        return "../../../assets/images/wind-alt.jpeg";
+        image = "wind-alt.jpeg";
+        break;
       case "fog":
-        return "../../../assets/images/fog.jpeg";
+        image = "fog.jpeg";
+        break;
+      default:
+        image = "clear-day.jpeg";
+        break;
     }
+    return `../../../assets/images/${image}`;
   }
 }

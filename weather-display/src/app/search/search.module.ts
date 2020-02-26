@@ -7,6 +7,7 @@ import { MatInputModule } from "@angular/material/input";
 import { ReactiveFormsModule } from "@angular/forms";
 import { MatIconModule } from "@angular/material/icon";
 import { MatAutocompleteModule } from "@angular/material/autocomplete";
+import { MatButtonModule } from "@angular/material/button";
 
 import { CitySearchComponent } from "./city-search/city-search.component";
 import { LocationConverstionService } from "../services/location-conversion.service";
@@ -20,6 +21,7 @@ import { WeatherLookupService } from "../services/weather-lookup.service";
     MatFormFieldModule,
     ReactiveFormsModule,
     MatAutocompleteModule,
+    MatButtonModule,
     MatCardModule,
     MatInputModule,
     MatIconModule,

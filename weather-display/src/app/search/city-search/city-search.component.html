@@ -1,53 +1,68 @@
 <mat-card
   class="weather-dashboard"
   [ngStyle]="{
-    'background-image': 'url(' + getBackground(currentWeather?.icon) + ')'
+    'background-image': currentWeather?.icon
+      ? 'url(' + getBackground(currentWeather?.icon) + ')'
+      : 'url(../../../assets/images/partly-cloudy-day.jpeg)'
   }"
 >
+  <mat-form-field appearance="fill" class="search-bar">
+    <mat-label>Search Location</mat-label>
+    <mat-icon matPrefix>search</mat-icon>
+    <input
+      matInput
+      [formControl]="search"
+      id="search-term"
+      type="text"
+      placeholder="Enter city or zip"
+      [matAutocomplete]="searchOptions"
+      matAutocompletePosition="below"
+      (keydown)="queryWeather($event)"
+    />
+    <button matSuffix mat-icon-button (click)="search.setValue('')">
+      <mat-icon>clear</mat-icon>
+    </button>
+    <mat-autocomplete
+      autoActiveFirstOption
+      #searchOptions="matAutocomplete"
+      (optionSelected)="queryWeather()"
+    >
+      <mat-option *ngFor="let location of locationOptions" [value]="location">
+        {{ location }}
+      </mat-option>
+    </mat-autocomplete>
+  </mat-form-field>
   <mat-card-header>
-    <mat-card-title class="weather-header">Current Weather</mat-card-title>
+    <mat-card-title class="weather-header">{{ location }}</mat-card-title>
     <mat-card-subtitle class="weather-subheader">
       {{ currentWeather?.temperature | number: "1.0-0"
       }}<i class="wi wi-fahrenheit"></i
     ></mat-card-subtitle>
   </mat-card-header>
-
-  <i
-    *ngIf="currentWeather"
-    class="weather-icon"
-    [ngClass]="getIcon(currentWeather?.icon)"
-  ></i>
-  <div class="weather-forecast">{{ currentWeather?.summary }}</div>
-
-  <mat-card-content class="weather-summary">
-    {{ currentWeather?.precipProbability }}
-    {{ currentWeather?.windSpeed }}
-    {{ currentWeather?.visibility }}
+  <mat-card-content>
+    <i
+      *ngIf="currentWeather"
+      class="weather-icon"
+      [ngClass]="getIcon(currentWeather?.icon)"
+    ></i>
+    <div class="weather-forecast">{{ currentWeather?.summary }}</div>
   </mat-card-content>
 </mat-card>
-<form [formGroup]="this.searchForm">
-  <mat-form-field appearance="outline" class="search-bar">
-    <mat-icon matPrefix>search</mat-icon>
-    <input
-      matInput
-      formControlName="search"
-      [formControl]="this.searchForm.controls.search"
-      id="search-term"
-      type="text"
-      placeholder="Enter city or zip"
-      [matAutocomplete]="searchOptions"
-      (keydown)="queryWeather()"
-    />
-    <mat-hint>Specify country code like Paris, US</mat-hint>
-  </mat-form-field>
-  <mat-autocomplete
-    #searchOptions="matAutocomplete"
-    (optionActivated)="queryWeather()"
-  >
-    <mat-option *ngFor="let location of locationOptions" [value]="location">
-      {{ location }}
-    </mat-option>
-  </mat-autocomplete>
-</form>
-
-<div></div>
+<div class="weather-summary">
+  <button mat-button class="summary-text">
+    <i class="wi wi-umbrella"></i>
+    <span>
+      Precip: {{ currentWeather?.precipProbability | number: "1.0-0" }}</span
+    >
+  </button>
+  <button mat-button class="summary-text">
+    <i class="wi wi-strong-wind"></i>
+    <span>
+      Wind speed: {{ currentWeather?.windSpeed | number: "1.0-0" }} mph</span
+    >
+  </button>
+  <button mat-button class="summary-text">
+    <i class="wi wi-humidity"></i>
+    <span> Humidity: {{ currentWeather?.humidity | number: "1.0-0" }} %</span>
+  </button>
+</div>
