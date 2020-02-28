@@ -11,12 +11,12 @@ router.get(
       const longitude = req.params.longitude;
       const key = process.env.WEATHER_DATA_API_KEY;
 
-      const weatherAPI = `https://api.darksky.net/forecast/${key}/${latitude},${longitude}`;
+      const weatherAPI = `https://api.darksky.net/forecast/${key}/${latitude},${longitude}?exclude=minutely`;
       const axios_response = await axios.get(weatherAPI);
       if (!axios_response) {
         res.status(404).send();
       }
-      const forecast = axios_response.data.currently;
+      const forecast = axios_response.data;
       res.send(forecast);
     } catch (error) {
       res.status(500).send();

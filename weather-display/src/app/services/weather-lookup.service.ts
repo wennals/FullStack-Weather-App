@@ -14,40 +14,9 @@ export class WeatherLookupService {
     );
   }
 
-  private convertToLatLong(data: LatLong): LatLong {
-    return {
-      latitude: data.latitude,
-      longitude: data.longitude
-    };
-  }
-
   getWeather(geocode: LatLong): Observable<WeatherData> {
     return this.httpClient.get<WeatherData>(
       `/api/get-current-weather-data/${geocode.latitude}/${geocode.longitude}`
     );
-  }
-
-  private convertToWeatherData(data: WeatherData) {
-    return {
-      time: data.time,
-      summary: data.summary,
-      icon: data.icon,
-      nearestStormDistance: data.nearestStormDistance,
-      nearestStormBearing: data.nearestStormBearing,
-      precipIntensity: data.precipIntensity,
-      precipProbability: data.precipProbability,
-      temperature: data.temperature,
-      apparentTemperature: data.apparentTemperature,
-      dewPoint: data.dewPoint,
-      humidity: data.humidity,
-      pressure: data.pressure,
-      windSpeed: data.windSpeed,
-      windGust: data.windGust,
-      windBearing: data.windBearing,
-      cloudCover: data.cloudCover,
-      uvIndex: data.uvIndex,
-      visibility: data.visibility,
-      ozone: data.ozone
-    };
   }
 }

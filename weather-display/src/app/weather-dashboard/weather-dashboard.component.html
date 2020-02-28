@@ -6,32 +6,12 @@
       : 'url(../../../assets/images/partly-cloudy-day.jpeg)'
   }"
 >
-  <mat-form-field appearance="fill" class="search-bar">
-    <mat-label>Search Location</mat-label>
-    <mat-icon matPrefix>search</mat-icon>
-    <input
-      matInput
-      [formControl]="search"
-      id="search-term"
-      type="text"
-      placeholder="Enter city or zip"
-      [matAutocomplete]="searchOptions"
-      matAutocompletePosition="below"
-      (keydown)="queryWeather($event)"
-    />
-    <button matSuffix mat-icon-button (click)="search.setValue('')">
-      <mat-icon>clear</mat-icon>
-    </button>
-    <mat-autocomplete
-      autoActiveFirstOption
-      #searchOptions="matAutocomplete"
-      (optionSelected)="queryWeather()"
-    >
-      <mat-option *ngFor="let location of locationOptions" [value]="location">
-        {{ location }}
-      </mat-option>
-    </mat-autocomplete>
-  </mat-form-field>
+  <city-search
+    [locationOptions]="locationOptions"
+    (locationQuery)="locationQuery($event)"
+    (weatherQuery)="queryWeather($event)"
+  >
+  </city-search>
   <mat-card-header>
     <mat-card-title class="weather-header">{{ location }}</mat-card-title>
     <mat-card-subtitle class="weather-subheader">
