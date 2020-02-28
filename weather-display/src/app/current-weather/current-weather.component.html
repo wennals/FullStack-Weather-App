@@ -1,0 +1,48 @@
+<div
+  class="background"
+  [ngStyle]="{
+    'background-image': currentWeather?.icon
+      ? 'url(' + getBackground(currentWeather?.icon) + ')'
+      : 'url(../../../assets/images/partly-cloudy-day.jpeg)'
+  }"
+>
+  <div class="weather-dashboard">
+    <div class="weather-header">
+      {{ location }}
+      <p class="caption">
+        {{ currentWeather?.time * 1000 | date: "medium" }}
+      </p>
+    </div>
+    <div class="weather-content">
+      <span>Currently</span>
+      <span id="temperature"
+        >{{ currentWeather?.temperature | number: "1.0-0"
+        }}<i class="wi wi-fahrenheit"></i
+      ></span>
+      <div class="weather-forecast">{{ currentWeather?.summary }}</div>
+    </div>
+    <i
+      *ngIf="currentWeather"
+      class="weather-icon"
+      [ngClass]="getIcon(currentWeather?.icon)"
+    ></i>
+  </div>
+</div>
+<!-- <div class="weather-summary">
+  <button mat-button class="summary-text">
+    <i class="wi wi-umbrella"></i>
+    <span>
+      Precip: {{ currentWeather?.precipProbability | number: "1.0-0" }}</span
+    >
+  </button>
+  <button mat-button class="summary-text">
+    <i class="wi wi-strong-wind"></i>
+    <span>
+      Wind speed: {{ currentWeather?.windSpeed | number: "1.0-0" }} mph</span
+    >
+  </button>
+  <button mat-button class="summary-text">
+    <i class="wi wi-humidity"></i>
+    <span> Humidity: {{ currentWeather?.humidity | number: "1.0-0" }} %</span>
+  </button>
+</div> -->

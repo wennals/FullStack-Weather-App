@@ -1,38 +1,48 @@
-.weather-dashboard {
+.background {
   height: 500px;
+  width: 50%;
+  margin-left: 16px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.weather-dashboard {
+  padding-top: 16px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: flex-start;
-  background-repeat: no-repeat;
-  background-size: cover;
-  margin: 20px 100px;
+  margin-left: 10px;
 }
 
 .weather-header {
-  position: relative;
-  bottom: 80px;
+  align-self: center;
   color: white;
-  font-size: 48px;
+  font-size: 24px;
 }
-.weather-subheader {
-  position: relative;
-  bottom: 60px;
+.weather-content {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   color: white;
   padding-top: 20px;
-  font-size: 64px;
+  font-size: 24px;
+  & #temperature {
+    font-size: 36px;
+  }
+}
+
+.caption {
+  text-align: center;
+  padding-top: 10px;
+  font-size: 12px;
 }
 .weather-icon {
-  position: relative;
-  bottom: 60px;
   font-size: 100px;
   color: white;
   border-radius: 10px;
 }
 
 .weather-forecast {
-  position: relative;
-  bottom: 40px;
   color: white;
   font-size: 24px;
 }

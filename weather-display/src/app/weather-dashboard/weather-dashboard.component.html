@@ -1,48 +1,12 @@
-<mat-card
-  class="weather-dashboard"
-  [ngStyle]="{
-    'background-image': currentWeather?.icon
-      ? 'url(' + getBackground(currentWeather?.icon) + ')'
-      : 'url(../../../assets/images/partly-cloudy-day.jpeg)'
-  }"
+<location-search
+  class="search-bar"
+  [locationOptions]="locationOptions"
+  (locationQuery)="locationQuery($event)"
+  (weatherQuery)="queryWeather($event)"
 >
-  <city-search
-    [locationOptions]="locationOptions"
-    (locationQuery)="locationQuery($event)"
-    (weatherQuery)="queryWeather($event)"
-  >
-  </city-search>
-  <mat-card-header>
-    <mat-card-title class="weather-header">{{ location }}</mat-card-title>
-    <mat-card-subtitle class="weather-subheader">
-      {{ currentWeather?.temperature | number: "1.0-0"
-      }}<i class="wi wi-fahrenheit"></i
-    ></mat-card-subtitle>
-  </mat-card-header>
-  <mat-card-content>
-    <i
-      *ngIf="currentWeather"
-      class="weather-icon"
-      [ngClass]="getIcon(currentWeather?.icon)"
-    ></i>
-    <div class="weather-forecast">{{ currentWeather?.summary }}</div>
-  </mat-card-content>
-</mat-card>
-<div class="weather-summary">
-  <button mat-button class="summary-text">
-    <i class="wi wi-umbrella"></i>
-    <span>
-      Precip: {{ currentWeather?.precipProbability | number: "1.0-0" }}</span
-    >
-  </button>
-  <button mat-button class="summary-text">
-    <i class="wi wi-strong-wind"></i>
-    <span>
-      Wind speed: {{ currentWeather?.windSpeed | number: "1.0-0" }} mph</span
-    >
-  </button>
-  <button mat-button class="summary-text">
-    <i class="wi wi-humidity"></i>
-    <span> Humidity: {{ currentWeather?.humidity | number: "1.0-0" }} %</span>
-  </button>
-</div>
+</location-search>
+
+<current-weather
+  [currentWeather]="currentWeather"
+  [location]="location"
+></current-weather>

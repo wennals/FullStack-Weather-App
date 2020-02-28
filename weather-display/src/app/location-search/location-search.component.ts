@@ -1,15 +1,14 @@
 import { Component, OnInit, Input, Output } from "@angular/core";
 import { FormControl, Validators } from "@angular/forms";
 import { EventEmitter } from "@angular/core";
-import { MatAutocompleteSelectedEvent } from "@angular/material/autocomplete";
 import { MatOption } from "@angular/material/core";
 
 @Component({
-  selector: "city-search",
-  templateUrl: "./city-search.component.html",
-  styleUrls: ["./city-search.component.scss"]
+  selector: "location-search",
+  templateUrl: "./location-search.component.html",
+  styleUrls: ["./location-search.component.scss"]
 })
-export class CitySearchComponent implements OnInit {
+export class LocationSearchComponent implements OnInit {
   @Input("matAutocompletePosition") position = "below";
   @Input()
   locationOptions: string[];

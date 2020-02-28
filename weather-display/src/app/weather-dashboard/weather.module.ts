@@ -9,14 +9,19 @@ import { MatIconModule } from "@angular/material/icon";
 import { MatAutocompleteModule } from "@angular/material/autocomplete";
 import { MatButtonModule } from "@angular/material/button";
 
-import { CitySearchComponent } from "../city-search/city-search.component";
+import { LocationSearchComponent } from "../location-search/location-search.component";
 import { LocationConverstionService } from "../services/location-conversion.service";
 import { HttpClientModule } from "@angular/common/http";
 import { WeatherLookupService } from "../services/weather-lookup.service";
 import { WeatherDashboard } from "./weather-dashboard.component";
+import { CurrentWeatherComponent } from "../current-weather/current-weather.component";
 
 @NgModule({
-  declarations: [CitySearchComponent, WeatherDashboard],
+  declarations: [
+    LocationSearchComponent,
+    CurrentWeatherComponent,
+    WeatherDashboard
+  ],
   imports: [
     CommonModule,
     MatFormFieldModule,
@@ -29,6 +34,6 @@ import { WeatherDashboard } from "./weather-dashboard.component";
     HttpClientModule
   ],
   providers: [LocationConverstionService, WeatherLookupService],
-  exports: [CitySearchComponent, WeatherDashboard]
+  exports: [LocationSearchComponent, CurrentWeatherComponent, WeatherDashboard]
 })
 export class WeatherModule {}
