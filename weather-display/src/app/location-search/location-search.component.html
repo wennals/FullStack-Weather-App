@@ -1,0 +1,28 @@
+<mat-form-field appearance="fill" class="search-bar">
+  <mat-label>Search Location</mat-label>
+  <mat-icon matPrefix>search</mat-icon>
+  <input
+    matInput
+    [formControl]="search"
+    id="search-term"
+    type="text"
+    placeholder="Enter city or zip"
+    [matAutocomplete]="searchOptions"
+    matAutocompletePosition="below"
+  />
+  <button matSuffix mat-icon-button (click)="search.setValue('')">
+    <mat-icon>clear</mat-icon>
+  </button>
+  <mat-autocomplete
+    autoActiveFirstOption
+    #searchOptions="matAutocomplete"
+    (optionSelected)="onLocationSelected($event.option)"
+  >
+    <mat-option *ngFor="let location of locationOptions" [value]="location">
+      {{ location }}
+    </mat-option>
+  </mat-autocomplete>
+  <mat-error *ngIf="search.invalid"
+    >Please select a value from the list</mat-error
+  >
+</mat-form-field>

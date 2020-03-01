@@ -6,8 +6,8 @@ const router = new express.Router();
 router.get("/api/get-auto-complete-locations/:location", async (req, res) => {
   try {
     const location = req.params.location;
-    const key = "AIzaSyCZdxpU2fo-R5s7r-ZdnKTe1eEKpaMaiaE";
-    const placesAPI = `https://maps.googleapis.com/maps/api/place/autocomplete/json?input=${location}&key=${key}`;
+    const key = process.env.GOOGLE_PLACES_API_KEY;
+    const placesAPI = `https://maps.googleapis.com/maps/api/place/autocomplete/json?input=${location}&types=(regions)&key=${key}`;
     const axios_response = await axios.get(placesAPI);
     if (!axios_response) {
       return res.status(404).send();

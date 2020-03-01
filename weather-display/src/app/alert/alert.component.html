@@ -1,0 +1,10 @@
+<div class="container" *ngFor="let alert of data">
+  <h1 mat-dialog-title>{{ alert?.title }}</h1>
+  <div mat-dialog-content>
+    <h2>{{ alert?.severity }}</h2>
+    <h3>Issued: {{ alert?.time * 1000 | date: "medium" }}</h3>
+    <h3>Expires: {{ alert?.expires * 1000 | date: "medium" }}</h3>
+    <h3>Affected regions: {{ alert?.regions }}</h3>
+    <p>{{ alert?.description }}</p>
+  </div>
+</div>

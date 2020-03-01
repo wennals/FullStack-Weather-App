@@ -1,0 +1,67 @@
+<div
+  class="background"
+  [ngStyle]="{
+    'background-image': currentWeather?.icon
+      ? 'url(' + getBackground(currentWeather?.icon) + ')'
+      : 'url(../../../assets/images/partly-cloudy-day.jpg)'
+  }"
+>
+  <location-search
+    class="search-bar"
+    [locationOptions]="locationOptions"
+    (locationQuery)="getLocations($event)"
+    (weatherQuery)="queryWeather($event)"
+  >
+  </location-search>
+
+  <div class="weather-dashboard">
+    <div class="weather-content">
+      <span
+        >{{ location }}
+        <button
+          mat-icon-button
+          *ngIf="alerts?.length > 0"
+          class="alert"
+          (click)="getAlerts()"
+        >
+          <mat-icon>warning</mat-icon>
+        </button>
+      </span>
+      <p class="caption">
+        {{ currentWeather?.time * 1000 | date: "medium" }}
+      </p>
+      <span id="temperature"
+        >{{ currentWeather?.temperature | number: "1.0-0"
+        }}<i id="degree" class="wi wi-fahrenheit"></i
+      ></span>
+      <i
+        *ngIf="currentWeather"
+        class="weather-icon"
+        [ngClass]="getIcon(currentWeather?.icon)"
+      ></i>
+      <div class="weather-forecast">{{ currentWeather?.summary }}</div>
+    </div>
+
+    <div class="weather-metrics">
+      <span class="item">
+        <i class="wi wi-thermometer"></i>
+        Feels like:
+        {{ currentWeather?.apparentTemperature | number: "1.0-0" }}
+        <i class="wi wi-fahrenheit"></i
+      ></span>
+      <span class="item">
+        <i class="wi wi-humidity"></i>
+        Humidity: {{ currentWeather?.humidity | number: "1.0-0" }}%</span
+      >
+      <span class="item">
+        <i class="wi wi-umbrella"></i>
+        Chance of rain:
+        {{ currentWeather?.precipProbability | number: "1.0-0" }} %
+      </span>
+      <span class="item">
+        <i class="wi wi-strong-wind"></i>
+        Wind speed: {{ currentWeather?.windSpeed | number: "1.0-0" }} mph</span
+      >
+    </div>
+  </div>
+</div>
