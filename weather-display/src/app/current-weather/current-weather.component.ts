@@ -1,5 +1,9 @@
-import { Component, OnInit, Input } from "@angular/core";
+import { Component, OnInit, Input, Output } from "@angular/core";
 import { WeatherData } from "../models/weather.interface";
+import { EventEmitter } from "@angular/core";
+import { MatCard } from "@angular/material/card";
+import { MatDialog } from "@angular/material/dialog";
+import { AlertComponent } from "../alert/alert.component";
 
 @Component({
   selector: "current-weather",
@@ -9,10 +13,29 @@ import { WeatherData } from "../models/weather.interface";
 export class CurrentWeatherComponent implements OnInit {
   @Input() currentWeather: WeatherData["currently"];
   @Input() location: string;
+  @Input() locationOptions: string[];
+  @Input() alerts: WeatherData["alerts"];
+  @Output() locationQuery: EventEmitter<string> = new EventEmitter();
+  @Output() weatherQuery: EventEmitter<string> = new EventEmitter();
 
-  constructor() {}
+  constructor(public dialog: MatDialog) {}
 
   ngOnInit() {}
+
+  getLocations(event: string) {
+    this.locationQuery.emit(event);
+  }
+
+  queryWeather(event: string) {
+    this.weatherQuery.emit(event);
+  }
+
+  getAlerts() {
+    const dialogRef = this.dialog.open(AlertComponent, {
+      height: "300px",
+      data: this.alerts
+    });
+  }
 
   getIcon(icon: string): string {
     switch (icon) {
@@ -43,37 +66,37 @@ export class CurrentWeatherComponent implements OnInit {
     let image: string;
     switch (icon) {
       case "clear-day":
-        image = "clear-day.jpeg";
+        image = "clear-day.jpg";
         break;
       case "clear-night":
-        image = "clear-night.jpeg";
+        image = "clear-night.jpg";
         break;
       case "partly-cloudy-day":
-        image = "partly-cloudy-day.jpeg";
+        image = "partly-cloudy-day.jpg";
         break;
       case "partly-cloudy-night":
-        image = "partly-cloudy-night.jpeg";
+        image = "partly-cloudy-night.jpg";
         break;
       case "cloudy":
         image = "cloudy.jpg";
         break;
       case "rain":
-        image = "rain.jpeg";
+        image = "rain.jpg";
         break;
       case "sleet":
-        image = "sleet.";
+        image = "sleet.jpg";
         break;
       case "snow":
-        image = "snow.jpeg";
+        image = "snow.jpg";
         break;
       case "wind":
-        image = "wind-alt.jpeg";
+        image = "wind.jpg";
         break;
       case "fog":
-        image = "fog.jpeg";
+        image = "fog.jpg";
         break;
       default:
-        image = "clear-day.jpeg";
+        image = "clear-day.jpg";
         break;
     }
     return `../../../assets/images/${image}`;

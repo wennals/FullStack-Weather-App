@@ -3,7 +3,6 @@ import { LocationConverstionService } from "src/app/services/location-conversion
 import { WeatherLookupService } from "src/app/services/weather-lookup.service";
 import { LatLong } from "src/app/models/latlong.interface";
 import { WeatherData } from "src/app/models/weather.interface";
-import { EventEmitter } from "protractor";
 
 @Component({
   selector: "weather-dashboard",
@@ -12,9 +11,7 @@ import { EventEmitter } from "protractor";
 })
 export class WeatherDashboard implements OnInit {
   @Input("matAutocompletePosition") position = "below";
-  @Output()
   locationOptions: string[];
-  @Output()
   location: string = "Baltimore,MD,USA";
   currentWeather: WeatherData["currently"];
   hourly: WeatherData["hourly"];

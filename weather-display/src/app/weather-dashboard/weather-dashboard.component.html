@@ -1,12 +1,10 @@
-<location-search
-  class="search-bar"
-  [locationOptions]="locationOptions"
-  (locationQuery)="locationQuery($event)"
-  (weatherQuery)="queryWeather($event)"
->
-</location-search>
-
 <current-weather
   [currentWeather]="currentWeather"
   [location]="location"
+  [locationOptions]="locationOptions"
+  [alerts]="alerts"
+  (locationQuery)="locationQuery($event)"
+  (weatherQuery)="queryWeather($event)"
 ></current-weather>
+<hourly-forecast [hourly]="hourly"></hourly-forecast>
+<daily-forecast [daily]="daily"></daily-forecast>

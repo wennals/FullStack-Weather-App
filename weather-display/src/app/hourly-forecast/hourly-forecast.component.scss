@@ -1,0 +1,50 @@
+.forecast {
+  margin-right: 16px;
+  flex: 1 0 auto;
+  width: 100px;
+}
+
+.header {
+  font-size: 16px;
+}
+
+.content {
+  padding-bottom: 10px;
+}
+
+.container {
+  width: max-content;
+  padding-top: 16px;
+  display: flex;
+  flex-direction: row;
+  overflow: auto;
+}
+
+#icon {
+  padding-top: 24px;
+  padding-bottom: 16px;
+  font-size: 64px;
+}
+
+#degree {
+  font-size: 16px;
+}
+
+.border {
+  border: 2px solid #000;
+  border-radius: 5px;
+  & .header {
+    color: white;
+    background-color: #4b0091;
+    border: 2px solid black;
+    border-radius: 3px;
+  }
+}
+
+.card-title {
+  color: white;
+  font-size: 16px;
+  padding: 8px 16px;
+  border-radius: 5px;
+  background-color: #4b0091;
+}
