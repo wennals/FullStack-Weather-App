@@ -7,8 +7,13 @@
     </div>
     <div class="container">
       <div
-        class="met border text-center"
         *ngFor="let met of forecast?.data; let i = index"
+        class="text-center "
+        [ngClass]="{
+          border: met?.temperatureHigh || i == 0,
+          'daily-forecast': met?.temperatureHigh,
+          'hourly-forecast': !met?.temperatureHigh
+        }"
       >
         <div class="header">
           {{
@@ -21,8 +26,10 @@
         </div>
         <i id="icon" class="{{ getIcon(met?.icon) }}"></i>
         <div class="content">
-          <div class="summary">{{ met?.summary }}</div>
-          <div class="summary">{{ met?.temperature }}</div>
+          <div [ngClass]="{ summary: met?.temperatureHigh }">
+            {{ met?.summary }}
+          </div>
+          <div>{{ met?.temperature | number: "1.0-0" }}</div>
           <ng-container *ngIf="met?.moonPhase">
             <div class="item pair">
               <span
@@ -35,10 +42,6 @@
                 }}<i id="degree" class="wi wi-fahrenheit"></i
               ></span>
             </div>
-            <span
-              >High: {{ met?.temperature | number: "1.0-0"
-              }}<i id="degree" class="wi wi-fahrenheit"></i
-            ></span>
             <div class="item">
               <i class="wi wi-sunrise"></i> Sunrise at:
               {{ met?.sunriseTime * 1000 | date: "shortTime" }}
