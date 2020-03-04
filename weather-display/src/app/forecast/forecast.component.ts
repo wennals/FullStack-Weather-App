@@ -1,13 +1,13 @@
 import { Component, Input } from "@angular/core";
-import { WeatherData } from "../models/weather.interface";
+import { Weather } from "../models/weather.interface";
 
 @Component({
-  selector: "daily-forecast",
-  templateUrl: "./daily-forecast.component.html",
-  styleUrls: ["./daily-forecast.component.scss"]
+  selector: "forecast-component",
+  templateUrl: "./forecast.component.html",
+  styleUrls: ["./forecast.component.scss"]
 })
-export class DailyForecastComponent {
-  @Input() daily: WeatherData["daily"];
+export class ForecastComponent {
+  @Input() forecast: Weather;
   constructor() {}
 
   getIcon(icon: string): string {

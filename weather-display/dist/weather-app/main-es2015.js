@@ -428,252 +428,154 @@ CurrentWeatherComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵ
 
 /***/ }),
 
-/***/ "./src/app/daily-forecast/daily-forecast.component.ts":
-/*!************************************************************!*\
-  !*** ./src/app/daily-forecast/daily-forecast.component.ts ***!
-  \************************************************************/
-/*! exports provided: DailyForecastComponent */
+/***/ "./src/app/forecast/forecast.component.ts":
+/*!************************************************!*\
+  !*** ./src/app/forecast/forecast.component.ts ***!
+  \************************************************/
+/*! exports provided: ForecastComponent */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "DailyForecastComponent", function() { return DailyForecastComponent; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ForecastComponent", function() { return ForecastComponent; });
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js");
 /* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/common */ "./node_modules/@angular/common/__ivy_ngcc__/fesm2015/common.js");
 
 
 
 const _c0 = function (a0, a1) { return { "wi-umbrella": a0, "wi-snowflake-cold": a1 }; };
-function DailyForecastComponent_ng_container_0_div_10_Template(rf, ctx) { if (rf & 1) {
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 7);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "div", 8);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](2);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpipe"](3, "date");
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](4, "i", 9);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](5, "div", 10);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](6, "div", 11);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](7);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](8, "div", 12);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](9, "span");
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](10);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpipe"](11, "number");
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](12, "i", 13);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](13, "span");
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](14);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpipe"](15, "number");
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](16, "i", 13);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](17, "div", 14);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](18, "i", 15);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](19);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpipe"](20, "date");
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](21, "div", 14);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](22, "i", 16);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](23);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpipe"](24, "date");
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](25, "div", 17);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](26, "div", 14);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](27, "span");
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](28, "i", 18);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](29);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpipe"](30, "number");
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](31, "div", 14);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](32, "span");
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](33, "i", 19);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](34);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpipe"](35, "number");
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](36, "div", 14);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](37, "i", 20);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](38);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpipe"](39, "number");
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-} if (rf & 2) {
-    const forecast_r16 = ctx.$implicit;
-    const ctx_r15 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"](2);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"](" ", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpipeBind2"](3, 14, (forecast_r16 == null ? null : forecast_r16.time) * 1000, "EEEE"), " ");
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵclassMap"](ctx_r15.getIcon(forecast_r16 == null ? null : forecast_r16.icon));
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](3);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate"](forecast_r16 == null ? null : forecast_r16.summary);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](3);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"]("High: ", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpipeBind2"](11, 17, forecast_r16 == null ? null : forecast_r16.temperatureHigh, "1.0-0"), "");
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](4);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"]("Low: ", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpipeBind2"](15, 20, forecast_r16 == null ? null : forecast_r16.temperatureLow, "1.0-0"), "");
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](5);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"](" Sunrise at: ", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpipeBind2"](20, 23, (forecast_r16 == null ? null : forecast_r16.sunriseTime) * 1000, "shortTime"), " ");
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](4);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"](" Sunset at: ", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpipeBind2"](24, 26, (forecast_r16 == null ? null : forecast_r16.sunsetTime) * 1000, "shortTime"), " ");
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](6);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"](" Windpeed: ", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpipeBind2"](30, 29, forecast_r16 == null ? null : forecast_r16.windSpeed, "1.0-0"), " mph");
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](5);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"](" Humidity: ", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpipeBind2"](35, 32, forecast_r16 == null ? null : forecast_r16.humidity, "1.0-0"), "%");
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](3);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngClass", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpureFunction2"](38, _c0, (forecast_r16 == null ? null : forecast_r16.precipType) === "rain", (forecast_r16 == null ? null : forecast_r16.precipType) === "snow"));
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate2"](" ", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpipeBind2"](39, 35, forecast_r16 == null ? null : forecast_r16.precipProbability, "1.0-0"), "% Chance of ", forecast_r16 == null ? null : forecast_r16.precipType, " ");
-} }
-function DailyForecastComponent_ng_container_0_Template(rf, ctx) { if (rf & 1) {
+function ForecastComponent_ng_container_0_div_9_ng_container_10_Template(rf, ctx) { if (rf & 1) {
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementContainerStart"](0);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "div", 1);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](2, "div", 2);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](3, "h1", 3);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](4, "7-Day Forecast");
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "div", 11);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](2, "span");
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](3);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpipe"](4, "number");
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](5, "i", 12);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](5, "h2", 4);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](6, "Summary:");
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](6, "span");
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](7);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpipe"](8, "number");
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](9, "i", 12);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](7, "p");
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](8);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](10, "span");
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](11);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpipe"](12, "number");
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](13, "i", 12);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](14, "div", 13);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](15, "i", 14);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](16);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpipe"](17, "date");
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](18, "div", 13);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](19, "i", 15);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](20);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpipe"](21, "date");
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](22, "div", 16);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](23, "div", 13);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](24, "span");
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](25, "i", 17);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](26);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpipe"](27, "number");
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](9, "div", 5);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](10, DailyForecastComponent_ng_container_0_div_10_Template, 40, 41, "div", 6);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](28, "div", 13);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](29, "span");
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](30, "i", 18);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](31);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpipe"](32, "number");
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](33, "div", 13);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](34, "i", 19);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](35);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpipe"](36, "number");
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementContainerEnd"]();
 } if (rf & 2) {
-    const ctx_r14 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](8);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate"](ctx_r14.daily == null ? null : ctx_r14.daily.summary);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngForOf", ctx_r14.daily == null ? null : ctx_r14.daily.data);
+    const met_r12 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"]().$implicit;
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](3);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"]("High: ", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpipeBind2"](4, 10, met_r12 == null ? null : met_r12.temperatureHigh, "1.0-0"), "");
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](4);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"]("Low: ", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpipeBind2"](8, 13, met_r12 == null ? null : met_r12.temperatureLow, "1.0-0"), "");
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](4);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"]("High: ", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpipeBind2"](12, 16, met_r12 == null ? null : met_r12.temperature, "1.0-0"), "");
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](5);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"](" Sunrise at: ", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpipeBind2"](17, 19, (met_r12 == null ? null : met_r12.sunriseTime) * 1000, "shortTime"), " ");
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](4);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"](" Sunset at: ", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpipeBind2"](21, 22, (met_r12 == null ? null : met_r12.sunsetTime) * 1000, "shortTime"), " ");
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](6);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"](" Windpeed: ", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpipeBind2"](27, 25, met_r12 == null ? null : met_r12.windSpeed, "1.0-0"), " mph");
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](5);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"](" Humidity: ", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpipeBind2"](32, 28, met_r12 == null ? null : met_r12.humidity, "1.0-0"), "%");
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](3);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngClass", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpureFunction2"](34, _c0, (met_r12 == null ? null : met_r12.precipType) === "rain", (met_r12 == null ? null : met_r12.precipType) === "snow"));
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate2"](" ", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpipeBind2"](36, 31, met_r12 == null ? null : met_r12.precipProbability, "1.0-0"), "% Chance of ", met_r12 == null ? null : met_r12.precipType, " ");
 } }
-class DailyForecastComponent {
-    constructor() {
-    }
-    getIcon(icon) {
-        switch (icon) {
-            case "clear-day":
-                return "wi wi-day-sunny";
-            case "clear-night":
-                return "wi wi-night-clear";
-            case "partly-cloudy-day":
-                return "wi wi-day-cloudy";
-            case "partly-cloudy-night":
-                return "wi wi-night-cloudy";
-            case "cloudy":
-                return "wi wi-cloudy";
-            case "rain":
-                return "wi wi-rain";
-            case "sleet":
-                return "wi wi-sleet";
-            case "snow":
-                return "wi wi-snow";
-            case "wind":
-                return "wi wi-windy";
-            case "fog":
-                return "wi wi-fog";
-        }
-    }
-}
-DailyForecastComponent.ɵfac = function DailyForecastComponent_Factory(t) { return new (t || DailyForecastComponent)(); };
-DailyForecastComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: DailyForecastComponent, selectors: [["daily-forecast"]], inputs: { daily: "daily" }, decls: 1, vars: 1, consts: [[4, "ngIf"], [1, "card"], [1, "card-body"], [1, "card-title"], [1, "card-subtitle"], [1, "container"], ["class", "forecast border text-center", 4, "ngFor", "ngForOf"], [1, "forecast", "border", "text-center"], [1, "header"], ["id", "icon"], [1, "content"], [1, "summary"], [1, "item", "pair"], ["id", "degree", 1, "wi", "wi-fahrenheit"], [1, "item"], [1, "wi", "wi-sunrise"], [1, "wi", "wi-sunset"], [1, "pair"], [1, "wi", "wi-strong-wind"], [1, "wi", "wi-humidity"], [1, "wi", 3, "ngClass"]], template: function DailyForecastComponent_Template(rf, ctx) { if (rf & 1) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](0, DailyForecastComponent_ng_container_0_Template, 11, 2, "ng-container", 0);
-    } if (rf & 2) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngIf", ctx.daily == null ? null : ctx.daily.data);
-    } }, directives: [_angular_common__WEBPACK_IMPORTED_MODULE_1__["NgIf"], _angular_common__WEBPACK_IMPORTED_MODULE_1__["NgForOf"], _angular_common__WEBPACK_IMPORTED_MODULE_1__["NgClass"]], pipes: [_angular_common__WEBPACK_IMPORTED_MODULE_1__["DatePipe"], _angular_common__WEBPACK_IMPORTED_MODULE_1__["DecimalPipe"]], styles: [".forecast[_ngcontent-%COMP%] {\n  margin-right: 16px;\n  -webkit-box-flex: 0;\n          flex: 0 0 300px;\n}\n\n.content[_ngcontent-%COMP%] {\n  padding-bottom: 10px;\n  padding-left: 8px;\n  padding-right: 8px;\n}\n\n.content[_ngcontent-%COMP%]   .summary[_ngcontent-%COMP%] {\n  background-color: yellow;\n}\n\n.container[_ngcontent-%COMP%] {\n  padding-top: 16px;\n  display: -webkit-box;\n  display: flex;\n  -webkit-box-orient: horizontal;\n  -webkit-box-direction: normal;\n          flex-direction: row;\n  overflow: auto;\n}\n\n.pair[_ngcontent-%COMP%] {\n  padding-top: 10px;\n  display: -webkit-box;\n  display: flex;\n  -webkit-box-orient: horizontal;\n  -webkit-box-direction: normal;\n          flex-direction: row;\n  -webkit-box-pack: space-evenly;\n          justify-content: space-evenly;\n  -webkit-box-align: center;\n          align-items: center;\n}\n\n#icon[_ngcontent-%COMP%] {\n  padding-top: 24px;\n  padding-bottom: 16px;\n  font-size: 64px;\n}\n\n#degree[_ngcontent-%COMP%] {\n  font-size: 16px;\n}\n\n.border[_ngcontent-%COMP%] {\n  border: 2px solid #000;\n  border-radius: 5px;\n}\n\n.border[_ngcontent-%COMP%]   .header[_ngcontent-%COMP%] {\n  font-size: 16px;\n  color: white;\n  background-color: #4b0091;\n  border: 2px solid black;\n  border-radius: 3px;\n}\n\n.card-title[_ngcontent-%COMP%] {\n  color: white;\n  font-size: 16px;\n  padding: 8px 16px;\n  border-radius: 5px;\n  background-color: #4b0091;\n}\n\n.item[_ngcontent-%COMP%] {\n  padding-bottom: 10px;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvZGFpbHktZm9yZWNhc3QvQzpcXFVzZXJzXFx3ZW5uYVxcUHJvZ3JhbW1pbmdcXEZ1bGxTdGFjay1XZWF0aGVyLUFwcFxcd2VhdGhlci1kaXNwbGF5L3NyY1xcYXBwXFxkYWlseS1mb3JlY2FzdFxcZGFpbHktZm9yZWNhc3QuY29tcG9uZW50LnNjc3MiLCJzcmMvYXBwL2RhaWx5LWZvcmVjYXN0L2RhaWx5LWZvcmVjYXN0LmNvbXBvbmVudC5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0Usa0JBQUE7RUFDQSxtQkFBQTtVQUFBLGVBQUE7QUNDRjs7QURFQTtFQUNFLG9CQUFBO0VBQ0EsaUJBQUE7RUFDQSxrQkFBQTtBQ0NGOztBREFFO0VBQ0Usd0JBQUE7QUNFSjs7QURFQTtFQUNFLGlCQUFBO0VBQ0Esb0JBQUE7RUFBQSxhQUFBO0VBQ0EsOEJBQUE7RUFBQSw2QkFBQTtVQUFBLG1CQUFBO0VBRUEsY0FBQTtBQ0FGOztBREdBO0VBQ0UsaUJBQUE7RUFDQSxvQkFBQTtFQUFBLGFBQUE7RUFDQSw4QkFBQTtFQUFBLDZCQUFBO1VBQUEsbUJBQUE7RUFFQSw4QkFBQTtVQUFBLDZCQUFBO0VBQ0EseUJBQUE7VUFBQSxtQkFBQTtBQ0RGOztBRElBO0VBQ0UsaUJBQUE7RUFDQSxvQkFBQTtFQUNBLGVBQUE7QUNERjs7QURJQTtFQUNFLGVBQUE7QUNERjs7QURJQTtFQUNFLHNCQUFBO0VBQ0Esa0JBQUE7QUNERjs7QURFRTtFQUNFLGVBQUE7RUFDQSxZQUFBO0VBQ0EseUJBQUE7RUFDQSx1QkFBQTtFQUNBLGtCQUFBO0FDQUo7O0FESUE7RUFDRSxZQUFBO0VBQ0EsZUFBQTtFQUNBLGlCQUFBO0VBQ0Esa0JBQUE7RUFDQSx5QkFBQTtBQ0RGOztBRElBO0VBQ0Usb0JBQUE7QUNERiIsImZpbGUiOiJzcmMvYXBwL2RhaWx5LWZvcmVjYXN0L2RhaWx5LWZvcmVjYXN0LmNvbXBvbmVudC5zY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLmZvcmVjYXN0IHtcclxuICBtYXJnaW4tcmlnaHQ6IDE2cHg7XHJcbiAgZmxleDogMCAwIDMwMHB4O1xyXG59XHJcblxyXG4uY29udGVudCB7XHJcbiAgcGFkZGluZy1ib3R0b206IDEwcHg7XHJcbiAgcGFkZGluZy1sZWZ0OiA4cHg7XHJcbiAgcGFkZGluZy1yaWdodDogOHB4O1xyXG4gICYgLnN1bW1hcnkge1xyXG4gICAgYmFja2dyb3VuZC1jb2xvcjogeWVsbG93O1xyXG4gIH1cclxufVxyXG5cclxuLmNvbnRhaW5lciB7XHJcbiAgcGFkZGluZy10b3A6IDE2cHg7XHJcbiAgZGlzcGxheTogZmxleDtcclxuICBmbGV4LWRpcmVjdGlvbjogcm93O1xyXG5cclxuICBvdmVyZmxvdzogYXV0bztcclxufVxyXG5cclxuLnBhaXIge1xyXG4gIHBhZGRpbmctdG9wOiAxMHB4O1xyXG4gIGRpc3BsYXk6IGZsZXg7XHJcbiAgZmxleC1kaXJlY3Rpb246IHJvdztcclxuXHJcbiAganVzdGlmeS1jb250ZW50OiBzcGFjZS1ldmVubHk7XHJcbiAgYWxpZ24taXRlbXM6IGNlbnRlcjtcclxufVxyXG5cclxuI2ljb24ge1xyXG4gIHBhZGRpbmctdG9wOiAyNHB4O1xyXG4gIHBhZGRpbmctYm90dG9tOiAxNnB4O1xyXG4gIGZvbnQtc2l6ZTogNjRweDtcclxufVxyXG5cclxuI2RlZ3JlZSB7XHJcbiAgZm9udC1zaXplOiAxNnB4O1xyXG59XHJcblxyXG4uYm9yZGVyIHtcclxuICBib3JkZXI6IDJweCBzb2xpZCAjMDAwO1xyXG4gIGJvcmRlci1yYWRpdXM6IDVweDtcclxuICAmIC5oZWFkZXIge1xyXG4gICAgZm9udC1zaXplOiAxNnB4O1xyXG4gICAgY29sb3I6IHdoaXRlO1xyXG4gICAgYmFja2dyb3VuZC1jb2xvcjogIzRiMDA5MTtcclxuICAgIGJvcmRlcjogMnB4IHNvbGlkIGJsYWNrO1xyXG4gICAgYm9yZGVyLXJhZGl1czogM3B4O1xyXG4gIH1cclxufVxyXG5cclxuLmNhcmQtdGl0bGUge1xyXG4gIGNvbG9yOiB3aGl0ZTtcclxuICBmb250LXNpemU6IDE2cHg7XHJcbiAgcGFkZGluZzogOHB4IDE2cHg7XHJcbiAgYm9yZGVyLXJhZGl1czogNXB4O1xyXG4gIGJhY2tncm91bmQtY29sb3I6ICM0YjAwOTE7XHJcbn1cclxuXHJcbi5pdGVtIHtcclxuICBwYWRkaW5nLWJvdHRvbTogMTBweDtcclxufVxyXG4iLCIuZm9yZWNhc3Qge1xuICBtYXJnaW4tcmlnaHQ6IDE2cHg7XG4gIGZsZXg6IDAgMCAzMDBweDtcbn1cblxuLmNvbnRlbnQge1xuICBwYWRkaW5nLWJvdHRvbTogMTBweDtcbiAgcGFkZGluZy1sZWZ0OiA4cHg7XG4gIHBhZGRpbmctcmlnaHQ6IDhweDtcbn1cbi5jb250ZW50IC5zdW1tYXJ5IHtcbiAgYmFja2dyb3VuZC1jb2xvcjogeWVsbG93O1xufVxuXG4uY29udGFpbmVyIHtcbiAgcGFkZGluZy10b3A6IDE2cHg7XG4gIGRpc3BsYXk6IGZsZXg7XG4gIGZsZXgtZGlyZWN0aW9uOiByb3c7XG4gIG92ZXJmbG93OiBhdXRvO1xufVxuXG4ucGFpciB7XG4gIHBhZGRpbmctdG9wOiAxMHB4O1xuICBkaXNwbGF5OiBmbGV4O1xuICBmbGV4LWRpcmVjdGlvbjogcm93O1xuICBqdXN0aWZ5LWNvbnRlbnQ6IHNwYWNlLWV2ZW5seTtcbiAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbn1cblxuI2ljb24ge1xuICBwYWRkaW5nLXRvcDogMjRweDtcbiAgcGFkZGluZy1ib3R0b206IDE2cHg7XG4gIGZvbnQtc2l6ZTogNjRweDtcbn1cblxuI2RlZ3JlZSB7XG4gIGZvbnQtc2l6ZTogMTZweDtcbn1cblxuLmJvcmRlciB7XG4gIGJvcmRlcjogMnB4IHNvbGlkICMwMDA7XG4gIGJvcmRlci1yYWRpdXM6IDVweDtcbn1cbi5ib3JkZXIgLmhlYWRlciB7XG4gIGZvbnQtc2l6ZTogMTZweDtcbiAgY29sb3I6IHdoaXRlO1xuICBiYWNrZ3JvdW5kLWNvbG9yOiAjNGIwMDkxO1xuICBib3JkZXI6IDJweCBzb2xpZCBibGFjaztcbiAgYm9yZGVyLXJhZGl1czogM3B4O1xufVxuXG4uY2FyZC10aXRsZSB7XG4gIGNvbG9yOiB3aGl0ZTtcbiAgZm9udC1zaXplOiAxNnB4O1xuICBwYWRkaW5nOiA4cHggMTZweDtcbiAgYm9yZGVyLXJhZGl1czogNXB4O1xuICBiYWNrZ3JvdW5kLWNvbG9yOiAjNGIwMDkxO1xufVxuXG4uaXRlbSB7XG4gIHBhZGRpbmctYm90dG9tOiAxMHB4O1xufSJdfQ== */"] });
-/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](DailyForecastComponent, [{
-        type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"],
-        args: [{
-                selector: "daily-forecast",
-                templateUrl: "./daily-forecast.component.html",
-                styleUrls: ["./daily-forecast.component.scss"]
-            }]
-    }], function () { return []; }, { daily: [{
-            type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"]
-        }] }); })();
-
-
-/***/ }),
-
-/***/ "./src/app/hourly-forecast/hourly-forecast.component.ts":
-/*!**************************************************************!*\
-  !*** ./src/app/hourly-forecast/hourly-forecast.component.ts ***!
-  \**************************************************************/
-/*! exports provided: HourlyWeatherComponent */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "HourlyWeatherComponent", function() { return HourlyWeatherComponent; });
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js");
-/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/common */ "./node_modules/@angular/common/__ivy_ngcc__/fesm2015/common.js");
-
-
-
-const _c0 = function (a0) { return { border: a0 }; };
-function HourlyWeatherComponent_div_0_div_9_Template(rf, ctx) { if (rf & 1) {
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 7);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "div", 8);
+function ForecastComponent_ng_container_0_div_9_Template(rf, ctx) { if (rf & 1) {
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 6);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "div", 7);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](2);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpipe"](3, "date");
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](4, "i", 9);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](5, "div", 10);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](6);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](4, "i", 8);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](5, "div", 9);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](6, "div", 10);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](7);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](7, "div", 10);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](8);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpipe"](9, "number");
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](10, "i", 11);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](8, "div", 10);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](9);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](10, ForecastComponent_ng_container_0_div_9_ng_container_10_Template, 37, 37, "ng-container", 0);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 } if (rf & 2) {
-    const forecast_r12 = ctx.$implicit;
-    const i_r13 = ctx.index;
+    const met_r12 = ctx.$implicit;
     const ctx_r11 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"](2);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngClass", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpureFunction1"](13, _c0, i_r13 === 0));
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"](" ", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpipeBind2"](3, 7, (forecast_r12 == null ? null : forecast_r12.time) * 1000, "shortTime"), " ");
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"](" ", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpipeBind2"](3, 7, (met_r12 == null ? null : met_r12.time) * 1000, (ctx_r11.forecast == null ? null : ctx_r11.forecast.data[0].temperatureHigh) == null ? "shortTime" : "EEEE"), " ");
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵclassMap"](ctx_r11.getIcon(forecast_r12 == null ? null : forecast_r12.icon));
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵclassMap"](ctx_r11.getIcon(met_r12 == null ? null : met_r12.icon));
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](3);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate"](met_r12 == null ? null : met_r12.summary);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate"](forecast_r12 == null ? null : forecast_r12.summary);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"](" ", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpipeBind2"](9, 10, forecast_r12 == null ? null : forecast_r12.temperature, "1.0-0"), "");
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate"](met_r12 == null ? null : met_r12.temperature);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngIf", met_r12 == null ? null : met_r12.moonPhase);
 } }
-function HourlyWeatherComponent_div_0_Template(rf, ctx) { if (rf & 1) {
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 1);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "div", 2);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](2, "h1", 3);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](3, "48-Hour Forecast");
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](4, "h2", 4);
+function ForecastComponent_ng_container_0_Template(rf, ctx) { if (rf & 1) {
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementContainerStart"](0);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "div", 1);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](2, "div", 2);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵprojection"](3);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](4, "h2", 3);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](5, "Summary:");
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](6, "p");
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](7);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](8, "div", 5);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](9, HourlyWeatherComponent_div_0_div_9_Template, 11, 15, "div", 6);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](8, "div", 4);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](9, ForecastComponent_ng_container_0_div_9_Template, 11, 10, "div", 5);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementContainerEnd"]();
 } if (rf & 2) {
     const ctx_r10 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](7);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate"](ctx_r10.hourly == null ? null : ctx_r10.hourly.summary);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate"](ctx_r10.forecast == null ? null : ctx_r10.forecast.summary);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngForOf", ctx_r10.hourly == null ? null : ctx_r10.hourly.data);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngForOf", ctx_r10.forecast == null ? null : ctx_r10.forecast.data);
 } }
-class HourlyWeatherComponent {
+const _c1 = [[["h1"]]];
+const _c2 = ["h1"];
+class ForecastComponent {
     constructor() {
     }
-    ngOnInit() { }
     getIcon(icon) {
         switch (icon) {
             case "clear-day":
@@ -699,20 +601,21 @@ class HourlyWeatherComponent {
         }
     }
 }
-HourlyWeatherComponent.ɵfac = function HourlyWeatherComponent_Factory(t) { return new (t || HourlyWeatherComponent)(); };
-HourlyWeatherComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: HourlyWeatherComponent, selectors: [["hourly-forecast"]], inputs: { hourly: "hourly" }, decls: 1, vars: 1, consts: [["class", "card", 4, "ngIf"], [1, "card"], [1, "card-body"], [1, "card-title"], [1, "card-subtitle"], [1, "container"], ["class", "forecast text-center", 3, "ngClass", 4, "ngFor", "ngForOf"], [1, "forecast", "text-center", 3, "ngClass"], [1, "header"], ["id", "icon"], [1, "content"], ["id", "degree", 1, "wi", "wi-fahrenheit"]], template: function HourlyWeatherComponent_Template(rf, ctx) { if (rf & 1) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](0, HourlyWeatherComponent_div_0_Template, 10, 2, "div", 0);
+ForecastComponent.ɵfac = function ForecastComponent_Factory(t) { return new (t || ForecastComponent)(); };
+ForecastComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: ForecastComponent, selectors: [["forecast-component"]], inputs: { forecast: "forecast" }, ngContentSelectors: _c2, decls: 1, vars: 1, consts: [[4, "ngIf"], [1, "card"], [1, "card-body"], [1, "card-subtitle"], [1, "container"], ["class", "met border text-center", 4, "ngFor", "ngForOf"], [1, "met", "border", "text-center"], [1, "header"], ["id", "icon"], [1, "content"], [1, "summary"], [1, "item", "pair"], ["id", "degree", 1, "wi", "wi-fahrenheit"], [1, "item"], [1, "wi", "wi-sunrise"], [1, "wi", "wi-sunset"], [1, "pair"], [1, "wi", "wi-strong-wind"], [1, "wi", "wi-humidity"], [1, "wi", 3, "ngClass"]], template: function ForecastComponent_Template(rf, ctx) { if (rf & 1) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵprojectionDef"](_c1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](0, ForecastComponent_ng_container_0_Template, 10, 2, "ng-container", 0);
     } if (rf & 2) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngIf", ctx.hourly == null ? null : ctx.hourly.data);
-    } }, directives: [_angular_common__WEBPACK_IMPORTED_MODULE_1__["NgIf"], _angular_common__WEBPACK_IMPORTED_MODULE_1__["NgForOf"], _angular_common__WEBPACK_IMPORTED_MODULE_1__["NgClass"]], pipes: [_angular_common__WEBPACK_IMPORTED_MODULE_1__["DatePipe"], _angular_common__WEBPACK_IMPORTED_MODULE_1__["DecimalPipe"]], styles: [".forecast[_ngcontent-%COMP%] {\n  margin-right: 16px;\n  -webkit-box-flex: 1;\n          flex: 1 0 auto;\n  width: 100px;\n}\n\n.header[_ngcontent-%COMP%] {\n  font-size: 16px;\n}\n\n.content[_ngcontent-%COMP%] {\n  padding-bottom: 10px;\n}\n\n.container[_ngcontent-%COMP%] {\n  padding-top: 16px;\n  display: -webkit-box;\n  display: flex;\n  -webkit-box-orient: horizontal;\n  -webkit-box-direction: normal;\n          flex-direction: row;\n  overflow: auto;\n}\n\n#icon[_ngcontent-%COMP%] {\n  padding-top: 24px;\n  padding-bottom: 16px;\n  font-size: 64px;\n}\n\n#degree[_ngcontent-%COMP%] {\n  font-size: 16px;\n}\n\n.border[_ngcontent-%COMP%] {\n  border: 2px solid #000;\n  border-radius: 5px;\n}\n\n.border[_ngcontent-%COMP%]   .header[_ngcontent-%COMP%] {\n  color: white;\n  background-color: #4b0091;\n  border: 2px solid black;\n  border-radius: 3px;\n}\n\n.card-title[_ngcontent-%COMP%] {\n  color: white;\n  font-size: 16px;\n  padding: 8px 16px;\n  border-radius: 5px;\n  background-color: #4b0091;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvaG91cmx5LWZvcmVjYXN0L0M6XFxVc2Vyc1xcd2VubmFcXFByb2dyYW1taW5nXFxGdWxsU3RhY2stV2VhdGhlci1BcHBcXHdlYXRoZXItZGlzcGxheS9zcmNcXGFwcFxcaG91cmx5LWZvcmVjYXN0XFxob3VybHktZm9yZWNhc3QuY29tcG9uZW50LnNjc3MiLCJzcmMvYXBwL2hvdXJseS1mb3JlY2FzdC9ob3VybHktZm9yZWNhc3QuY29tcG9uZW50LnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDRSxrQkFBQTtFQUNBLG1CQUFBO1VBQUEsY0FBQTtFQUNBLFlBQUE7QUNDRjs7QURFQTtFQUNFLGVBQUE7QUNDRjs7QURFQTtFQUNFLG9CQUFBO0FDQ0Y7O0FERUE7RUFDRSxpQkFBQTtFQUNBLG9CQUFBO0VBQUEsYUFBQTtFQUNBLDhCQUFBO0VBQUEsNkJBQUE7VUFBQSxtQkFBQTtFQUNBLGNBQUE7QUNDRjs7QURFQTtFQUNFLGlCQUFBO0VBQ0Esb0JBQUE7RUFDQSxlQUFBO0FDQ0Y7O0FERUE7RUFDRSxlQUFBO0FDQ0Y7O0FERUE7RUFDRSxzQkFBQTtFQUNBLGtCQUFBO0FDQ0Y7O0FEQUU7RUFDRSxZQUFBO0VBQ0EseUJBQUE7RUFDQSx1QkFBQTtFQUNBLGtCQUFBO0FDRUo7O0FERUE7RUFDRSxZQUFBO0VBQ0EsZUFBQTtFQUNBLGlCQUFBO0VBQ0Esa0JBQUE7RUFDQSx5QkFBQTtBQ0NGIiwiZmlsZSI6InNyYy9hcHAvaG91cmx5LWZvcmVjYXN0L2hvdXJseS1mb3JlY2FzdC5jb21wb25lbnQuc2NzcyIsInNvdXJjZXNDb250ZW50IjpbIi5mb3JlY2FzdCB7XHJcbiAgbWFyZ2luLXJpZ2h0OiAxNnB4O1xyXG4gIGZsZXg6IDEgMCBhdXRvO1xyXG4gIHdpZHRoOiAxMDBweDtcclxufVxyXG5cclxuLmhlYWRlciB7XHJcbiAgZm9udC1zaXplOiAxNnB4O1xyXG59XHJcblxyXG4uY29udGVudCB7XHJcbiAgcGFkZGluZy1ib3R0b206IDEwcHg7XHJcbn1cclxuXHJcbi5jb250YWluZXIge1xyXG4gIHBhZGRpbmctdG9wOiAxNnB4O1xyXG4gIGRpc3BsYXk6IGZsZXg7XHJcbiAgZmxleC1kaXJlY3Rpb246IHJvdztcclxuICBvdmVyZmxvdzogYXV0bztcclxufVxyXG5cclxuI2ljb24ge1xyXG4gIHBhZGRpbmctdG9wOiAyNHB4O1xyXG4gIHBhZGRpbmctYm90dG9tOiAxNnB4O1xyXG4gIGZvbnQtc2l6ZTogNjRweDtcclxufVxyXG5cclxuI2RlZ3JlZSB7XHJcbiAgZm9udC1zaXplOiAxNnB4O1xyXG59XHJcblxyXG4uYm9yZGVyIHtcclxuICBib3JkZXI6IDJweCBzb2xpZCAjMDAwO1xyXG4gIGJvcmRlci1yYWRpdXM6IDVweDtcclxuICAmIC5oZWFkZXIge1xyXG4gICAgY29sb3I6IHdoaXRlO1xyXG4gICAgYmFja2dyb3VuZC1jb2xvcjogIzRiMDA5MTtcclxuICAgIGJvcmRlcjogMnB4IHNvbGlkIGJsYWNrO1xyXG4gICAgYm9yZGVyLXJhZGl1czogM3B4O1xyXG4gIH1cclxufVxyXG5cclxuLmNhcmQtdGl0bGUge1xyXG4gIGNvbG9yOiB3aGl0ZTtcclxuICBmb250LXNpemU6IDE2cHg7XHJcbiAgcGFkZGluZzogOHB4IDE2cHg7XHJcbiAgYm9yZGVyLXJhZGl1czogNXB4O1xyXG4gIGJhY2tncm91bmQtY29sb3I6ICM0YjAwOTE7XHJcbn1cclxuIiwiLmZvcmVjYXN0IHtcbiAgbWFyZ2luLXJpZ2h0OiAxNnB4O1xuICBmbGV4OiAxIDAgYXV0bztcbiAgd2lkdGg6IDEwMHB4O1xufVxuXG4uaGVhZGVyIHtcbiAgZm9udC1zaXplOiAxNnB4O1xufVxuXG4uY29udGVudCB7XG4gIHBhZGRpbmctYm90dG9tOiAxMHB4O1xufVxuXG4uY29udGFpbmVyIHtcbiAgcGFkZGluZy10b3A6IDE2cHg7XG4gIGRpc3BsYXk6IGZsZXg7XG4gIGZsZXgtZGlyZWN0aW9uOiByb3c7XG4gIG92ZXJmbG93OiBhdXRvO1xufVxuXG4jaWNvbiB7XG4gIHBhZGRpbmctdG9wOiAyNHB4O1xuICBwYWRkaW5nLWJvdHRvbTogMTZweDtcbiAgZm9udC1zaXplOiA2NHB4O1xufVxuXG4jZGVncmVlIHtcbiAgZm9udC1zaXplOiAxNnB4O1xufVxuXG4uYm9yZGVyIHtcbiAgYm9yZGVyOiAycHggc29saWQgIzAwMDtcbiAgYm9yZGVyLXJhZGl1czogNXB4O1xufVxuLmJvcmRlciAuaGVhZGVyIHtcbiAgY29sb3I6IHdoaXRlO1xuICBiYWNrZ3JvdW5kLWNvbG9yOiAjNGIwMDkxO1xuICBib3JkZXI6IDJweCBzb2xpZCBibGFjaztcbiAgYm9yZGVyLXJhZGl1czogM3B4O1xufVxuXG4uY2FyZC10aXRsZSB7XG4gIGNvbG9yOiB3aGl0ZTtcbiAgZm9udC1zaXplOiAxNnB4O1xuICBwYWRkaW5nOiA4cHggMTZweDtcbiAgYm9yZGVyLXJhZGl1czogNXB4O1xuICBiYWNrZ3JvdW5kLWNvbG9yOiAjNGIwMDkxO1xufSJdfQ== */"] });
-/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](HourlyWeatherComponent, [{
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngIf", ctx.forecast == null ? null : ctx.forecast.data);
+    } }, directives: [_angular_common__WEBPACK_IMPORTED_MODULE_1__["NgIf"], _angular_common__WEBPACK_IMPORTED_MODULE_1__["NgForOf"], _angular_common__WEBPACK_IMPORTED_MODULE_1__["NgClass"]], pipes: [_angular_common__WEBPACK_IMPORTED_MODULE_1__["DatePipe"], _angular_common__WEBPACK_IMPORTED_MODULE_1__["DecimalPipe"]], styles: [".forecast[_ngcontent-%COMP%] {\n  margin-right: 16px;\n  -webkit-box-flex: 0;\n          flex: 0 0 300px;\n}\n\n.content[_ngcontent-%COMP%] {\n  padding-bottom: 10px;\n  padding-left: 8px;\n  padding-right: 8px;\n}\n\n.content[_ngcontent-%COMP%]   .summary[_ngcontent-%COMP%] {\n  background-color: yellow;\n}\n\n.container[_ngcontent-%COMP%] {\n  padding-top: 16px;\n  display: -webkit-box;\n  display: flex;\n  -webkit-box-orient: horizontal;\n  -webkit-box-direction: normal;\n          flex-direction: row;\n  overflow: auto;\n}\n\n.pair[_ngcontent-%COMP%] {\n  padding-top: 10px;\n  display: -webkit-box;\n  display: flex;\n  -webkit-box-orient: horizontal;\n  -webkit-box-direction: normal;\n          flex-direction: row;\n  -webkit-box-pack: space-evenly;\n          justify-content: space-evenly;\n  -webkit-box-align: center;\n          align-items: center;\n}\n\n#icon[_ngcontent-%COMP%] {\n  padding-top: 24px;\n  padding-bottom: 16px;\n  font-size: 64px;\n}\n\n#degree[_ngcontent-%COMP%] {\n  font-size: 16px;\n}\n\n.border[_ngcontent-%COMP%] {\n  border: 2px solid #000;\n  border-radius: 5px;\n}\n\n.border[_ngcontent-%COMP%]   .header[_ngcontent-%COMP%] {\n  font-size: 16px;\n  color: white;\n  background-color: #4b0091;\n  border: 2px solid black;\n  border-radius: 3px;\n}\n\n.card-title[_ngcontent-%COMP%] {\n  color: white;\n  font-size: 16px;\n  padding: 8px 16px;\n  border-radius: 5px;\n  background-color: #4b0091;\n}\n\n.item[_ngcontent-%COMP%] {\n  padding-bottom: 10px;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvZm9yZWNhc3QvQzpcXFVzZXJzXFx3ZW5uYVxcUHJvZ3JhbW1pbmdcXEZ1bGxTdGFjay1XZWF0aGVyLUFwcFxcd2VhdGhlci1kaXNwbGF5L3NyY1xcYXBwXFxmb3JlY2FzdFxcZm9yZWNhc3QuY29tcG9uZW50LnNjc3MiLCJzcmMvYXBwL2ZvcmVjYXN0L2ZvcmVjYXN0LmNvbXBvbmVudC5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0Usa0JBQUE7RUFDQSxtQkFBQTtVQUFBLGVBQUE7QUNDRjs7QURFQTtFQUNFLG9CQUFBO0VBQ0EsaUJBQUE7RUFDQSxrQkFBQTtBQ0NGOztBREFFO0VBQ0Usd0JBQUE7QUNFSjs7QURFQTtFQUNFLGlCQUFBO0VBQ0Esb0JBQUE7RUFBQSxhQUFBO0VBQ0EsOEJBQUE7RUFBQSw2QkFBQTtVQUFBLG1CQUFBO0VBRUEsY0FBQTtBQ0FGOztBREdBO0VBQ0UsaUJBQUE7RUFDQSxvQkFBQTtFQUFBLGFBQUE7RUFDQSw4QkFBQTtFQUFBLDZCQUFBO1VBQUEsbUJBQUE7RUFFQSw4QkFBQTtVQUFBLDZCQUFBO0VBQ0EseUJBQUE7VUFBQSxtQkFBQTtBQ0RGOztBRElBO0VBQ0UsaUJBQUE7RUFDQSxvQkFBQTtFQUNBLGVBQUE7QUNERjs7QURJQTtFQUNFLGVBQUE7QUNERjs7QURJQTtFQUNFLHNCQUFBO0VBQ0Esa0JBQUE7QUNERjs7QURFRTtFQUNFLGVBQUE7RUFDQSxZQUFBO0VBQ0EseUJBQUE7RUFDQSx1QkFBQTtFQUNBLGtCQUFBO0FDQUo7O0FESUE7RUFDRSxZQUFBO0VBQ0EsZUFBQTtFQUNBLGlCQUFBO0VBQ0Esa0JBQUE7RUFDQSx5QkFBQTtBQ0RGOztBRElBO0VBQ0Usb0JBQUE7QUNERiIsImZpbGUiOiJzcmMvYXBwL2ZvcmVjYXN0L2ZvcmVjYXN0LmNvbXBvbmVudC5zY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLmZvcmVjYXN0IHtcclxuICBtYXJnaW4tcmlnaHQ6IDE2cHg7XHJcbiAgZmxleDogMCAwIDMwMHB4O1xyXG59XHJcblxyXG4uY29udGVudCB7XHJcbiAgcGFkZGluZy1ib3R0b206IDEwcHg7XHJcbiAgcGFkZGluZy1sZWZ0OiA4cHg7XHJcbiAgcGFkZGluZy1yaWdodDogOHB4O1xyXG4gICYgLnN1bW1hcnkge1xyXG4gICAgYmFja2dyb3VuZC1jb2xvcjogeWVsbG93O1xyXG4gIH1cclxufVxyXG5cclxuLmNvbnRhaW5lciB7XHJcbiAgcGFkZGluZy10b3A6IDE2cHg7XHJcbiAgZGlzcGxheTogZmxleDtcclxuICBmbGV4LWRpcmVjdGlvbjogcm93O1xyXG5cclxuICBvdmVyZmxvdzogYXV0bztcclxufVxyXG5cclxuLnBhaXIge1xyXG4gIHBhZGRpbmctdG9wOiAxMHB4O1xyXG4gIGRpc3BsYXk6IGZsZXg7XHJcbiAgZmxleC1kaXJlY3Rpb246IHJvdztcclxuXHJcbiAganVzdGlmeS1jb250ZW50OiBzcGFjZS1ldmVubHk7XHJcbiAgYWxpZ24taXRlbXM6IGNlbnRlcjtcclxufVxyXG5cclxuI2ljb24ge1xyXG4gIHBhZGRpbmctdG9wOiAyNHB4O1xyXG4gIHBhZGRpbmctYm90dG9tOiAxNnB4O1xyXG4gIGZvbnQtc2l6ZTogNjRweDtcclxufVxyXG5cclxuI2RlZ3JlZSB7XHJcbiAgZm9udC1zaXplOiAxNnB4O1xyXG59XHJcblxyXG4uYm9yZGVyIHtcclxuICBib3JkZXI6IDJweCBzb2xpZCAjMDAwO1xyXG4gIGJvcmRlci1yYWRpdXM6IDVweDtcclxuICAmIC5oZWFkZXIge1xyXG4gICAgZm9udC1zaXplOiAxNnB4O1xyXG4gICAgY29sb3I6IHdoaXRlO1xyXG4gICAgYmFja2dyb3VuZC1jb2xvcjogIzRiMDA5MTtcclxuICAgIGJvcmRlcjogMnB4IHNvbGlkIGJsYWNrO1xyXG4gICAgYm9yZGVyLXJhZGl1czogM3B4O1xyXG4gIH1cclxufVxyXG5cclxuLmNhcmQtdGl0bGUge1xyXG4gIGNvbG9yOiB3aGl0ZTtcclxuICBmb250LXNpemU6IDE2cHg7XHJcbiAgcGFkZGluZzogOHB4IDE2cHg7XHJcbiAgYm9yZGVyLXJhZGl1czogNXB4O1xyXG4gIGJhY2tncm91bmQtY29sb3I6ICM0YjAwOTE7XHJcbn1cclxuXHJcbi5pdGVtIHtcclxuICBwYWRkaW5nLWJvdHRvbTogMTBweDtcclxufVxyXG4iLCIuZm9yZWNhc3Qge1xuICBtYXJnaW4tcmlnaHQ6IDE2cHg7XG4gIGZsZXg6IDAgMCAzMDBweDtcbn1cblxuLmNvbnRlbnQge1xuICBwYWRkaW5nLWJvdHRvbTogMTBweDtcbiAgcGFkZGluZy1sZWZ0OiA4cHg7XG4gIHBhZGRpbmctcmlnaHQ6IDhweDtcbn1cbi5jb250ZW50IC5zdW1tYXJ5IHtcbiAgYmFja2dyb3VuZC1jb2xvcjogeWVsbG93O1xufVxuXG4uY29udGFpbmVyIHtcbiAgcGFkZGluZy10b3A6IDE2cHg7XG4gIGRpc3BsYXk6IGZsZXg7XG4gIGZsZXgtZGlyZWN0aW9uOiByb3c7XG4gIG92ZXJmbG93OiBhdXRvO1xufVxuXG4ucGFpciB7XG4gIHBhZGRpbmctdG9wOiAxMHB4O1xuICBkaXNwbGF5OiBmbGV4O1xuICBmbGV4LWRpcmVjdGlvbjogcm93O1xuICBqdXN0aWZ5LWNvbnRlbnQ6IHNwYWNlLWV2ZW5seTtcbiAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbn1cblxuI2ljb24ge1xuICBwYWRkaW5nLXRvcDogMjRweDtcbiAgcGFkZGluZy1ib3R0b206IDE2cHg7XG4gIGZvbnQtc2l6ZTogNjRweDtcbn1cblxuI2RlZ3JlZSB7XG4gIGZvbnQtc2l6ZTogMTZweDtcbn1cblxuLmJvcmRlciB7XG4gIGJvcmRlcjogMnB4IHNvbGlkICMwMDA7XG4gIGJvcmRlci1yYWRpdXM6IDVweDtcbn1cbi5ib3JkZXIgLmhlYWRlciB7XG4gIGZvbnQtc2l6ZTogMTZweDtcbiAgY29sb3I6IHdoaXRlO1xuICBiYWNrZ3JvdW5kLWNvbG9yOiAjNGIwMDkxO1xuICBib3JkZXI6IDJweCBzb2xpZCBibGFjaztcbiAgYm9yZGVyLXJhZGl1czogM3B4O1xufVxuXG4uY2FyZC10aXRsZSB7XG4gIGNvbG9yOiB3aGl0ZTtcbiAgZm9udC1zaXplOiAxNnB4O1xuICBwYWRkaW5nOiA4cHggMTZweDtcbiAgYm9yZGVyLXJhZGl1czogNXB4O1xuICBiYWNrZ3JvdW5kLWNvbG9yOiAjNGIwMDkxO1xufVxuXG4uaXRlbSB7XG4gIHBhZGRpbmctYm90dG9tOiAxMHB4O1xufSJdfQ== */"] });
+/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](ForecastComponent, [{
         type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"],
         args: [{
-                selector: "hourly-forecast",
-                templateUrl: "./hourly-forecast.component.html",
-                styleUrls: ["./hourly-forecast.component.scss"]
+                selector: "forecast-component",
+                templateUrl: "./forecast.component.html",
+                styleUrls: ["./forecast.component.scss"]
             }]
-    }], function () { return []; }, { hourly: [{
+    }], function () { return []; }, { forecast: [{
             type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"]
         }] }); })();
 
@@ -931,9 +834,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var src_app_services_location_conversion_service__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! src/app/services/location-conversion.service */ "./src/app/services/location-conversion.service.ts");
 /* harmony import */ var src_app_services_weather_lookup_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! src/app/services/weather-lookup.service */ "./src/app/services/weather-lookup.service.ts");
 /* harmony import */ var _current_weather_current_weather_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../current-weather/current-weather.component */ "./src/app/current-weather/current-weather.component.ts");
-/* harmony import */ var _hourly_forecast_hourly_forecast_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../hourly-forecast/hourly-forecast.component */ "./src/app/hourly-forecast/hourly-forecast.component.ts");
-/* harmony import */ var _daily_forecast_daily_forecast_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../daily-forecast/daily-forecast.component */ "./src/app/daily-forecast/daily-forecast.component.ts");
-
+/* harmony import */ var _forecast_forecast_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../forecast/forecast.component */ "./src/app/forecast/forecast.component.ts");
 
 
 
@@ -972,19 +873,27 @@ class WeatherDashboard {
     }
 }
 WeatherDashboard.ɵfac = function WeatherDashboard_Factory(t) { return new (t || WeatherDashboard)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](src_app_services_location_conversion_service__WEBPACK_IMPORTED_MODULE_1__["LocationConverstionService"]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](src_app_services_weather_lookup_service__WEBPACK_IMPORTED_MODULE_2__["WeatherLookupService"])); };
-WeatherDashboard.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: WeatherDashboard, selectors: [["weather-dashboard"]], inputs: { position: ["matAutocompletePosition", "position"] }, decls: 3, vars: 6, consts: [[3, "currentWeather", "location", "locationOptions", "alerts", "locationQuery", "weatherQuery"], [3, "hourly"], [3, "daily"]], template: function WeatherDashboard_Template(rf, ctx) { if (rf & 1) {
+WeatherDashboard.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: WeatherDashboard, selectors: [["weather-dashboard"]], inputs: { position: ["matAutocompletePosition", "position"] }, decls: 7, vars: 6, consts: [[3, "currentWeather", "location", "locationOptions", "alerts", "locationQuery", "weatherQuery"], [3, "forecast"], [1, "card-title"]], template: function WeatherDashboard_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "current-weather", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("locationQuery", function WeatherDashboard_Template_current_weather_locationQuery_0_listener($event) { return ctx.locationQuery($event); })("weatherQuery", function WeatherDashboard_Template_current_weather_weatherQuery_0_listener($event) { return ctx.queryWeather($event); });
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](1, "hourly-forecast", 1);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](2, "daily-forecast", 2);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "forecast-component", 1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](2, "h1", 2);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](3, "48-Hour Forecast");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](4, "forecast-component", 1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](5, "h1", 2);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](6, "7-Day met");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
     } if (rf & 2) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("currentWeather", ctx.currentWeather)("location", ctx.location)("locationOptions", ctx.locationOptions)("alerts", ctx.alerts);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("hourly", ctx.hourly);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("daily", ctx.daily);
-    } }, directives: [_current_weather_current_weather_component__WEBPACK_IMPORTED_MODULE_3__["CurrentWeatherComponent"], _hourly_forecast_hourly_forecast_component__WEBPACK_IMPORTED_MODULE_4__["HourlyWeatherComponent"], _daily_forecast_daily_forecast_component__WEBPACK_IMPORTED_MODULE_5__["DailyForecastComponent"]], styles: ["\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL3dlYXRoZXItZGFzaGJvYXJkL3dlYXRoZXItZGFzaGJvYXJkLmNvbXBvbmVudC5zY3NzIn0= */"] });
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("forecast", ctx.hourly);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](3);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("forecast", ctx.daily);
+    } }, directives: [_current_weather_current_weather_component__WEBPACK_IMPORTED_MODULE_3__["CurrentWeatherComponent"], _forecast_forecast_component__WEBPACK_IMPORTED_MODULE_4__["ForecastComponent"]], styles: ["\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL3dlYXRoZXItZGFzaGJvYXJkL3dlYXRoZXItZGFzaGJvYXJkLmNvbXBvbmVudC5zY3NzIn0= */"] });
 /*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](WeatherDashboard, [{
         type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"],
         args: [{
@@ -1025,11 +934,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _services_weather_lookup_service__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ../services/weather-lookup.service */ "./src/app/services/weather-lookup.service.ts");
 /* harmony import */ var _weather_dashboard_component__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./weather-dashboard.component */ "./src/app/weather-dashboard/weather-dashboard.component.ts");
 /* harmony import */ var _current_weather_current_weather_component__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ../current-weather/current-weather.component */ "./src/app/current-weather/current-weather.component.ts");
-/* harmony import */ var _hourly_forecast_hourly_forecast_component__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ../hourly-forecast/hourly-forecast.component */ "./src/app/hourly-forecast/hourly-forecast.component.ts");
-/* harmony import */ var _daily_forecast_daily_forecast_component__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ../daily-forecast/daily-forecast.component */ "./src/app/daily-forecast/daily-forecast.component.ts");
-/* harmony import */ var _angular_material_dialog__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! @angular/material/dialog */ "./node_modules/@angular/material/__ivy_ngcc__/fesm2015/dialog.js");
-/* harmony import */ var _alert_alert_component__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ../alert/alert.component */ "./src/app/alert/alert.component.ts");
-
+/* harmony import */ var _forecast_forecast_component__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ../forecast/forecast.component */ "./src/app/forecast/forecast.component.ts");
+/* harmony import */ var _angular_material_dialog__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! @angular/material/dialog */ "./node_modules/@angular/material/__ivy_ngcc__/fesm2015/dialog.js");
+/* harmony import */ var _alert_alert_component__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ../alert/alert.component */ "./src/app/alert/alert.component.ts");
 
 
 
@@ -1059,7 +966,7 @@ WeatherModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineInje
             _angular_material_autocomplete__WEBPACK_IMPORTED_MODULE_7__["MatAutocompleteModule"],
             _angular_material_button__WEBPACK_IMPORTED_MODULE_8__["MatButtonModule"],
             _angular_material_card__WEBPACK_IMPORTED_MODULE_2__["MatCardModule"],
-            _angular_material_dialog__WEBPACK_IMPORTED_MODULE_17__["MatDialogModule"],
+            _angular_material_dialog__WEBPACK_IMPORTED_MODULE_16__["MatDialogModule"],
             _angular_material_input__WEBPACK_IMPORTED_MODULE_4__["MatInputModule"],
             _angular_material_icon__WEBPACK_IMPORTED_MODULE_6__["MatIconModule"],
             _angular_common_http__WEBPACK_IMPORTED_MODULE_11__["HttpClientModule"]
@@ -1067,23 +974,21 @@ WeatherModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineInje
 (function () { (typeof ngJitMode === "undefined" || ngJitMode) && _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵsetNgModuleScope"](WeatherModule, { declarations: [_location_search_location_search_component__WEBPACK_IMPORTED_MODULE_9__["LocationSearchComponent"],
         _current_weather_current_weather_component__WEBPACK_IMPORTED_MODULE_14__["CurrentWeatherComponent"],
         _weather_dashboard_component__WEBPACK_IMPORTED_MODULE_13__["WeatherDashboard"],
-        _hourly_forecast_hourly_forecast_component__WEBPACK_IMPORTED_MODULE_15__["HourlyWeatherComponent"],
-        _daily_forecast_daily_forecast_component__WEBPACK_IMPORTED_MODULE_16__["DailyForecastComponent"],
-        _alert_alert_component__WEBPACK_IMPORTED_MODULE_18__["AlertComponent"]], imports: [_angular_common__WEBPACK_IMPORTED_MODULE_1__["CommonModule"],
+        _forecast_forecast_component__WEBPACK_IMPORTED_MODULE_15__["ForecastComponent"],
+        _alert_alert_component__WEBPACK_IMPORTED_MODULE_17__["AlertComponent"]], imports: [_angular_common__WEBPACK_IMPORTED_MODULE_1__["CommonModule"],
         _angular_material_form_field__WEBPACK_IMPORTED_MODULE_3__["MatFormFieldModule"],
         _angular_forms__WEBPACK_IMPORTED_MODULE_5__["ReactiveFormsModule"],
         _angular_material_autocomplete__WEBPACK_IMPORTED_MODULE_7__["MatAutocompleteModule"],
         _angular_material_button__WEBPACK_IMPORTED_MODULE_8__["MatButtonModule"],
         _angular_material_card__WEBPACK_IMPORTED_MODULE_2__["MatCardModule"],
-        _angular_material_dialog__WEBPACK_IMPORTED_MODULE_17__["MatDialogModule"],
+        _angular_material_dialog__WEBPACK_IMPORTED_MODULE_16__["MatDialogModule"],
         _angular_material_input__WEBPACK_IMPORTED_MODULE_4__["MatInputModule"],
         _angular_material_icon__WEBPACK_IMPORTED_MODULE_6__["MatIconModule"],
         _angular_common_http__WEBPACK_IMPORTED_MODULE_11__["HttpClientModule"]], exports: [_location_search_location_search_component__WEBPACK_IMPORTED_MODULE_9__["LocationSearchComponent"],
         _current_weather_current_weather_component__WEBPACK_IMPORTED_MODULE_14__["CurrentWeatherComponent"],
         _weather_dashboard_component__WEBPACK_IMPORTED_MODULE_13__["WeatherDashboard"],
-        _hourly_forecast_hourly_forecast_component__WEBPACK_IMPORTED_MODULE_15__["HourlyWeatherComponent"],
-        _daily_forecast_daily_forecast_component__WEBPACK_IMPORTED_MODULE_16__["DailyForecastComponent"],
-        _alert_alert_component__WEBPACK_IMPORTED_MODULE_18__["AlertComponent"]] }); })();
+        _forecast_forecast_component__WEBPACK_IMPORTED_MODULE_15__["ForecastComponent"],
+        _alert_alert_component__WEBPACK_IMPORTED_MODULE_17__["AlertComponent"]] }); })();
 /*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](WeatherModule, [{
         type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["NgModule"],
         args: [{
@@ -1091,9 +996,8 @@ WeatherModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineInje
                     _location_search_location_search_component__WEBPACK_IMPORTED_MODULE_9__["LocationSearchComponent"],
                     _current_weather_current_weather_component__WEBPACK_IMPORTED_MODULE_14__["CurrentWeatherComponent"],
                     _weather_dashboard_component__WEBPACK_IMPORTED_MODULE_13__["WeatherDashboard"],
-                    _hourly_forecast_hourly_forecast_component__WEBPACK_IMPORTED_MODULE_15__["HourlyWeatherComponent"],
-                    _daily_forecast_daily_forecast_component__WEBPACK_IMPORTED_MODULE_16__["DailyForecastComponent"],
-                    _alert_alert_component__WEBPACK_IMPORTED_MODULE_18__["AlertComponent"]
+                    _forecast_forecast_component__WEBPACK_IMPORTED_MODULE_15__["ForecastComponent"],
+                    _alert_alert_component__WEBPACK_IMPORTED_MODULE_17__["AlertComponent"]
                 ],
                 imports: [
                     _angular_common__WEBPACK_IMPORTED_MODULE_1__["CommonModule"],
@@ -1102,7 +1006,7 @@ WeatherModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineInje
                     _angular_material_autocomplete__WEBPACK_IMPORTED_MODULE_7__["MatAutocompleteModule"],
                     _angular_material_button__WEBPACK_IMPORTED_MODULE_8__["MatButtonModule"],
                     _angular_material_card__WEBPACK_IMPORTED_MODULE_2__["MatCardModule"],
-                    _angular_material_dialog__WEBPACK_IMPORTED_MODULE_17__["MatDialogModule"],
+                    _angular_material_dialog__WEBPACK_IMPORTED_MODULE_16__["MatDialogModule"],
                     _angular_material_input__WEBPACK_IMPORTED_MODULE_4__["MatInputModule"],
                     _angular_material_icon__WEBPACK_IMPORTED_MODULE_6__["MatIconModule"],
                     _angular_common_http__WEBPACK_IMPORTED_MODULE_11__["HttpClientModule"]
@@ -1112,9 +1016,8 @@ WeatherModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineInje
                     _location_search_location_search_component__WEBPACK_IMPORTED_MODULE_9__["LocationSearchComponent"],
                     _current_weather_current_weather_component__WEBPACK_IMPORTED_MODULE_14__["CurrentWeatherComponent"],
                     _weather_dashboard_component__WEBPACK_IMPORTED_MODULE_13__["WeatherDashboard"],
-                    _hourly_forecast_hourly_forecast_component__WEBPACK_IMPORTED_MODULE_15__["HourlyWeatherComponent"],
-                    _daily_forecast_daily_forecast_component__WEBPACK_IMPORTED_MODULE_16__["DailyForecastComponent"],
-                    _alert_alert_component__WEBPACK_IMPORTED_MODULE_18__["AlertComponent"]
+                    _forecast_forecast_component__WEBPACK_IMPORTED_MODULE_15__["ForecastComponent"],
+                    _alert_alert_component__WEBPACK_IMPORTED_MODULE_17__["AlertComponent"]
                 ]
             }]
     }], null, null); })();

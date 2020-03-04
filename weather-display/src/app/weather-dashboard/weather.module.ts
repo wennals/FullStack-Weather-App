@@ -15,8 +15,7 @@ import { HttpClientModule } from "@angular/common/http";
 import { WeatherLookupService } from "../services/weather-lookup.service";
 import { WeatherDashboard } from "./weather-dashboard.component";
 import { CurrentWeatherComponent } from "../current-weather/current-weather.component";
-import { HourlyWeatherComponent } from "../hourly-forecast/hourly-forecast.component";
-import { DailyForecastComponent } from "../daily-forecast/daily-forecast.component";
+import { ForecastComponent } from "../forecast/forecast.component";
 import { MatDialogModule } from "@angular/material/dialog";
 import { AlertComponent } from "../alert/alert.component";
 
@@ -25,8 +24,7 @@ import { AlertComponent } from "../alert/alert.component";
     LocationSearchComponent,
     CurrentWeatherComponent,
     WeatherDashboard,
-    HourlyWeatherComponent,
-    DailyForecastComponent,
+    ForecastComponent,
     AlertComponent
   ],
   imports: [
@@ -46,8 +44,7 @@ import { AlertComponent } from "../alert/alert.component";
     LocationSearchComponent,
     CurrentWeatherComponent,
     WeatherDashboard,
-    HourlyWeatherComponent,
-    DailyForecastComponent,
+    ForecastComponent,
     AlertComponent
   ]
 })

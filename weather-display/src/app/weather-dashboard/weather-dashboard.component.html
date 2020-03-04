@@ -6,5 +6,10 @@
   (locationQuery)="locationQuery($event)"
   (weatherQuery)="queryWeather($event)"
 ></current-weather>
-<hourly-forecast [hourly]="hourly"></hourly-forecast>
-<daily-forecast [daily]="daily"></daily-forecast>
+<forecast-component [forecast]="hourly">
+  <h1 class="card-title">48-Hour Forecast</h1>
+</forecast-component>
+
+<forecast-component [forecast]="daily">
+  <h1 class="card-title">7-Day met</h1>
+</forecast-component>

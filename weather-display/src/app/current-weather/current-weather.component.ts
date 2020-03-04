@@ -1,9 +1,9 @@
 import { Component, OnInit, Input, Output } from "@angular/core";
-import { WeatherData } from "../models/weather.interface";
+import { WeatherData } from "../models/weather-data.interface";
 import { EventEmitter } from "@angular/core";
-import { MatCard } from "@angular/material/card";
 import { MatDialog } from "@angular/material/dialog";
 import { AlertComponent } from "../alert/alert.component";
+import { WeatherResponse } from "../models/weather-response.interface";
 
 @Component({
   selector: "current-weather",
@@ -11,10 +11,10 @@ import { AlertComponent } from "../alert/alert.component";
   styleUrls: ["./current-weather.component.scss"]
 })
 export class CurrentWeatherComponent implements OnInit {
-  @Input() currentWeather: WeatherData["currently"];
+  @Input() currentWeather: WeatherData;
   @Input() location: string;
   @Input() locationOptions: string[];
-  @Input() alerts: WeatherData["alerts"];
+  @Input() alerts: WeatherResponse["alerts"];
   @Output() locationQuery: EventEmitter<string> = new EventEmitter();
   @Output() weatherQuery: EventEmitter<string> = new EventEmitter();
 

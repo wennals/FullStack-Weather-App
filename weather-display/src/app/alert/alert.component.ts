@@ -1,5 +1,5 @@
-import { Component, Input, Inject } from "@angular/core";
-import { WeatherData } from "../models/weather.interface";
+import { Component, Inject } from "@angular/core";
+import { WeatherResponse } from "../models/weather-response.interface";
 import {
   MatDialog,
   MatDialogRef,
@@ -14,6 +14,6 @@ import {
 export class AlertComponent {
   constructor(
     public dialogRef: MatDialogRef<AlertComponent>,
-    @Inject(MAT_DIALOG_DATA) public data: WeatherData["alerts"]
+    @Inject(MAT_DIALOG_DATA) public data: WeatherResponse["alerts"]
   ) {}
 }

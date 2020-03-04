@@ -1,8 +1,8 @@
 import { Injectable } from "@angular/core";
 import { HttpClient } from "@angular/common/http";
 import { LatLong } from "../models/latlong.interface";
-import { Observable, fromEventPattern } from "rxjs";
-import { WeatherData } from "../models/weather.interface";
+import { Observable } from "rxjs";
+import { WeatherResponse } from "../models/weather-response.interface";
 
 @Injectable()
 export class WeatherLookupService {
@@ -14,8 +14,8 @@ export class WeatherLookupService {
     );
   }
 
-  getWeather(geocode: LatLong): Observable<WeatherData> {
-    return this.httpClient.get<WeatherData>(
+  getWeather(geocode: LatLong): Observable<WeatherResponse> {
+    return this.httpClient.get<WeatherResponse>(
       `/api/get-current-weather-data/${geocode.latitude}/${geocode.longitude}`
     );
   }

@@ -2,7 +2,9 @@ import { Component, OnInit, Input, Output } from "@angular/core";
 import { LocationConverstionService } from "src/app/services/location-conversion.service";
 import { WeatherLookupService } from "src/app/services/weather-lookup.service";
 import { LatLong } from "src/app/models/latlong.interface";
-import { WeatherData } from "src/app/models/weather.interface";
+import { WeatherResponse } from "src/app/models/weather-response.interface";
+import { WeatherData } from "../models/weather-data.interface";
+import { Weather } from "../models/weather.interface";
 
 @Component({
   selector: "weather-dashboard",
@@ -13,11 +15,11 @@ export class WeatherDashboard implements OnInit {
   @Input("matAutocompletePosition") position = "below";
   locationOptions: string[];
   location: string = "Baltimore,MD,USA";
-  currentWeather: WeatherData["currently"];
-  hourly: WeatherData["hourly"];
-  daily: WeatherData["daily"];
-  alerts: WeatherData["alerts"];
-  timezone: WeatherData["timezone"];
+  currentWeather: WeatherData;
+  hourly: Weather;
+  daily: Weather;
+  alerts: WeatherResponse["alerts"];
+  timezone: WeatherResponse["timezone"];
   isValidSearch: boolean = false;
   constructor(
     private locationConverstionService: LocationConverstionService,
@@ -39,7 +41,7 @@ export class WeatherDashboard implements OnInit {
     this.weatherService.getLatLong(event).subscribe((geocode: LatLong) => {
       this.weatherService
         .getWeather(geocode)
-        .subscribe((weather: WeatherData) => {
+        .subscribe((weather: WeatherResponse) => {
           this.currentWeather = weather.currently;
           this.hourly = weather.hourly;
           this.daily = weather.daily;
