@@ -4,16 +4,16 @@
 This project demonstrates my knowledge of and ability to use external API's in a full stack application. As a challange for myself I decided to develop a dynamic weather application that has an autocomple search capability that updates as the user types. I have also applied dynamic styling for the weather icons and background, each weather forecast has an associated background.
 
 ## View In The Web
-The project can be viewed on heroku via the following link:
+The project can be viewed on heroku via the following link: https://ennals-william-weather-app.herokuapp.com/
 
 ## Download and View locally
 1. Clone the repository to the desired directory:
     - git clone https://github.com/wennals/FullStack-Weather-App.git
 2. Download the required dependencies
-    - cd into "weather-server"
+    - cd into project folder
     - npm install
     - cd into "../weather-display"
-    -npm install
+    -npx ng build
 3. Set up the external API keys in weather-server/:
     - cd into "/weather-server"
     - rename the ".env-same" file to ".env"
