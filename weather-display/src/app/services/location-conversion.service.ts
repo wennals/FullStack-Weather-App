@@ -7,6 +7,7 @@ export class LocationConverstionService {
   constructor(private httpClient: HttpClient) {}
 
   getLocationList(location: string): Observable<string[]> {
+    console.log(location);
     return this.httpClient.get<string[]>(
       `/api/get-auto-complete-locations/${location}`
     );
