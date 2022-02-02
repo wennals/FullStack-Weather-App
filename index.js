@@ -13,14 +13,11 @@ app.use(express.json());
 app.use(placesRouter);
 app.use(geocodeRouter);
 app.use(weatherRouter);
-app.use(
-	express.static(path.join(__dirname, '/weather-display/dist/weather-app'))
-);
+const clientPath = path.join(__dirname, '/public');
+app.use(express.static(clientPath));
 
 app.get('*', (req, res) => {
-	res.sendFile(
-		path.join(__dirname + '/weather-display/dist/weather-app/index.html')
-	);
+	res.sendFile(path.join(clientPath, 'index.html'));
 });
 
 app.listen(port, () => {});
