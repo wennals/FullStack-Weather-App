@@ -8,16 +8,15 @@ import { ReactiveFormsModule } from "@angular/forms";
 import { MatIconModule } from "@angular/material/icon";
 import { MatAutocompleteModule } from "@angular/material/autocomplete";
 import { MatButtonModule } from "@angular/material/button";
-
-import { LocationSearchComponent } from "../location-search/location-search.component";
-import { LocationConverstionService } from "../services/location-conversion.service";
+import { MatDialogModule } from "@angular/material/dialog";
 import { HttpClientModule } from "@angular/common/http";
-import { WeatherLookupService } from "../services/weather-lookup.service";
-import { WeatherDashboard } from "./weather-dashboard.component";
+import { AlertComponent } from "../alert/alert.component";
 import { CurrentWeatherComponent } from "../current-weather/current-weather.component";
 import { ForecastComponent } from "../forecast/forecast.component";
-import { MatDialogModule } from "@angular/material/dialog";
-import { AlertComponent } from "../alert/alert.component";
+import { LocationSearchComponent } from "../location-search/location-search.component";
+import { LocationConverstionService } from "../services/location-conversion.service";
+import { WeatherLookupService } from "../services/weather-lookup.service";
+import { WeatherDashboard } from "./weather-dashboard.component";
 
 @NgModule({
   declarations: [

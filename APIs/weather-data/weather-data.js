@@ -12,7 +12,6 @@ router.get(
 			const key = process.env.WEATHER_DATA_API_KEY;
 
 			const weatherAPI = `https://api.darksky.net/forecast/${key}/${latitude},${longitude}?exclude=minutely`;
-			console.log(weatherAPI);
 			const axios_response = await axios.get(weatherAPI);
 			if (!axios_response) {
 				res.status(404).send();

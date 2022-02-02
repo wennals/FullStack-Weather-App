@@ -1,8 +1,8 @@
 import { Injectable } from "@angular/core";
-import { HttpClient } from "@angular/common/http";
 import { LatLong } from "../models/latlong.interface";
 import { Observable } from "rxjs";
 import { WeatherResponse } from "../models/weather-response.interface";
+import { HttpClient } from "@angular/common/http";
 
 @Injectable()
 export class WeatherLookupService {
