@@ -8,6 +8,10 @@
   flex: 0 0 300px;
 }
 
+.card-body {
+  padding: 0;
+}
+
 .content {
   padding-bottom: 10px;
   padding-left: 8px;
@@ -20,9 +24,9 @@
 .container {
   padding-top: 16px;
   display: flex;
-  flex-direction: row;
-
+  margin-bottom: 32px;
   overflow: auto;
+  background-color: #ffffff88;
 }
 
 .pair {
@@ -50,7 +54,7 @@
   & .header {
     font-size: 16px;
     color: white;
-    background-color: #4b0091;
+    background-color: #000000;
     border: 2px solid black;
     border-radius: 3px;
   }

@@ -1,3 +1,11 @@
+<div
+  class="background"
+  [ngStyle]="{
+    'background-image': currentWeather?.icon
+      ? 'url(' + getBackground(currentWeather?.icon) + ')'
+      : 'url(../../../assets/images/partly-cloudy-day.jpg)'
+  }"
+>
 <current-weather
   [currentWeather]="currentWeather"
   [location]="location"
@@ -9,7 +17,9 @@
 <forecast-component [forecast]="hourly">
   <h1 class="card-title">48-Hour Forecast</h1>
 </forecast-component>
-
+<br>
+<br>
 <forecast-component [forecast]="daily">
   <h1 class="card-title">7-Day met</h1>
 </forecast-component>
+</div>

@@ -61,44 +61,4 @@ export class CurrentWeatherComponent implements OnInit {
         return "wi wi-fog";
     }
   }
-
-  getBackground(icon: string): string {
-    let image: string;
-    switch (icon) {
-      case "clear-day":
-        image = "clear-day.jpg";
-        break;
-      case "clear-night":
-        image = "clear-night.jpg";
-        break;
-      case "partly-cloudy-day":
-        image = "partly-cloudy-day.jpg";
-        break;
-      case "partly-cloudy-night":
-        image = "partly-cloudy-night.jpg";
-        break;
-      case "cloudy":
-        image = "cloudy.jpg";
-        break;
-      case "rain":
-        image = "rain.jpg";
-        break;
-      case "sleet":
-        image = "sleet.jpg";
-        break;
-      case "snow":
-        image = "snow.jpg";
-        break;
-      case "wind":
-        image = "wind.jpg";
-        break;
-      case "fog":
-        image = "fog.jpg";
-        break;
-      default:
-        image = "clear-day.jpg";
-        break;
-    }
-    return `../../../assets/images/${image}`;
-  }
 }
